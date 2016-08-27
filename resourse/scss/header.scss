@@ -51,6 +51,9 @@
   .title__nav-link{
     text-decoration: none;
     color:white;
+    &:hover{
+      color:red;
+    }
   }
 }
 .title__total-price{
@@ -59,21 +62,29 @@
   align-self:flex-end;
   width: 100%;
   display: flex;
+  margin-top: 10px;
   justify-content: flex-end;
-  .price_numbers{
-    display: inline-block;
-  }
-  .svg-rubl{
-    display: inline-block;
-    width: 15px;
-    height: 15px;
-    fill: #ffffff;
-  }
+  align-items: center;
+
+}
+.price_numbers{
+  font-family: MyriadProBold;
+  font-size: 1.56rem;
+  display: inline-block;
+  font-weight: bold;
+  text-transform: uppercase;
+}
+.svg-rubl{
+  display: inline-block;
+  width: 19px;
+  height: 19px;
+  fill: #ffffff;
 }
 .title_tel-basket{
   display: flex;
   align-content:center;
   justify-content: space-between;
+  align-items: center;
 }
     .tel-basket__svg-call{
       fill: red;
@@ -101,7 +112,7 @@
   width: 100%;
   height: 40px;
   background: rgba(#fff,0.12);
-  padding-left: 20px;
+  //padding-left: 20px;
   display: flex;
   align-items: center;
   flex: 0 0 auto;
@@ -115,8 +126,38 @@
   }
   .header__nav-items{
     color:white;
+    cursor: pointer;
     font-size: 20px;
     display: inline-block;
     margin: 0 10px;
+    font-family: MyriadProBold;
+    font-weight: bold;
+  }
+  .header__nav-icon{
+    margin-left:auto;
+    display: flex;
+    align-items: center;
+    fill: rgba(#fff,.6);
+
+    .nav__svg_instagram:hover{
+      fill: rgba(#fff,.9);
+      cursor: pointer;
+    }
+    .header-nav__svg{
+      height: 22px;
+      width:22px;
+      margin-left: 10px;
+
+    }
+    .nav__svg_vk{
+      height: 28px;
+      width:28px;
+      &:hover{
+        fill: rgba(#fff,.9);
+        cursor: pointer;
+      }
+
+    }
+
   }
 }

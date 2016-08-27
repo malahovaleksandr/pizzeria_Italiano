@@ -1,6 +1,16 @@
 .wraper-main{
-  max-width:1200px;
   width: 100%;
-  margin: 0 auto;
-  border:1px solid green;
+
+  background:url("image/background_main.jpg");
+  background:url("../image/background_main.jpg");
+  background-size: cover;
+
+  .main-content{
+    max-width:1200px;
+    width: 100%;
+    margin: 0 auto;
+    border:1px solid green;
+    display: flex;
+    flex-wrap: wrap;
+  }
 }

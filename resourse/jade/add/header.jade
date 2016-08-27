@@ -25,12 +25,13 @@ header.header
 
                 .title_tel-basket
                     .tel-basket__svg-call
-                        svg.svg_tel_znachok
-                            use(xlink:href="image/sprite.svg#icon--tel_znachok")
+                        a(href="tel:365365")
+                            svg.svg_tel_znachok
+                                use(xlink:href="image/sprite.svg#icon--tel_znachok")
                     .tel-basket__telephon 365-365
                     .tel-basket__svg-basket
-                        svg.svg-korzina
-                            use(xlink:href="image/sprite.svg#icon--korzina")
+                        .basket-block.button-left
+                            | В корзину
 
 
     .header__nav
@@ -51,3 +52,8 @@ header.header
                 | ДЕСЕРТЫ
             a.header__nav-items
                 | НАПИТКИ
+            a.header__nav-icon
+                svg.header-nav__svg.nav__svg_instagram
+                    use(xlink:href="image/sprite.svg#icon--instagram")
+                svg.header-nav__svg.nav__svg_vk
+                    use(xlink:href="image/sprite.svg#icon--kontact")
