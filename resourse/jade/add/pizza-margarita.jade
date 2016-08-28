@@ -1,0 +1,27 @@
+// это блок товара в главном блоке с фото товра и описанием
+.main-content__block
+    .block__item-photo
+        a(href="")
+            img(src="../image/pizza-margarita.png" alt="pizza-margarita")
+    .block__item-title
+        |МАРГАРИТА
+    .block__item-description.
+        Томатный соус, томаты, двойная  порция моцареллы на фирменном тесте
+    .block__item-size
+        form(name="form-size-pizza", method="post")
+
+                input(type="radio", value="add", name="30", id="30cm")
+                label(for="30cm")
+                    |d 30 см
+                input(type="radio", value="add", name="40",id="40cm")
+                label(for="40cm")
+                    |d 40 см
+
+    .block__item-buy
+        .block__item-price
+            .price_numbers 429
+            svg.svg-rubl
+               use(xlink:href="image/sprite.svg#icon--znac_publy")
+        .block__item-basket
+            .basket-block.button-left
+                |В корзину

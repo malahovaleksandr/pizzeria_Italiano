@@ -3,9 +3,9 @@
 	<head>
 		<meta charset="UTF-8">
 		<meta name="viewport" content="width=device-width, initial-scale=1.0">
-		<meta name="description" content="loft">
-		<link el="shorcut icon" href="../favicon.ico" type="image/x-icon">
-		<link rel="icon" href="../favicon.ico" type="image/x-icon">
+		<meta name="description" content="pizza">
+		<!--link(el="shorcut icon" href="../favicon.ico" type="image/x-icon")-->
+		<!--link(rel="icon" href="../favicon.ico" type="image/x-icon")-->
 		<link rel="stylesheet" href="/css/main.css">
 	</head>
 	<body>
@@ -32,23 +32,62 @@
 										<use xlink:href="image/sprite.svg#icon--tel_znachok"></use>
 									</svg></a></div>
 							<div class="tel-basket__telephon">365-365</div>
-							<div class="tel-basket__svg-basket">
-								<div class="basket-block button-left">В корзину</div>
+							<div class="tel-basket__button-basket">
+								<div class="basket-block button-left">В корзина</div>
+								<div class="basket-buy-items">
+									<div class="block-basket_title">В Вашей корзине</div>
+									<div class="block-basket_items">
+										<div class="block-basket_item__name">Наименование</div>
+										<div class="block-basket_item__add">
+											<!--это блок на добавление-отнимание кол-ва продукта в заказ-->
+											<div class="block-add-items">
+												<div class="image-add-znak">-</div>
+												<div class="image-add-total">0</div>
+												<div class="image-add-znak">+</div>
+											</div>
+										</div>
+										<div class="title__total-price total-price_width20">
+											<div class="price_numbers color__grey">562</div>
+											<svg class="svg-rubl color__grey">
+												<use xlink:href="image/sprite.svg#icon--znac_publy"></use>
+											</svg>
+										</div>
+									</div>
+									<div class="block-basket_items">
+										<div class="block-basket_item__name">Наименование</div>
+										<div class="block-basket_item__add">
+											<!--это блок на добавление-отнимание кол-ва продукта в заказ-->
+											<div class="block-add-items">
+												<div class="image-add-znak">-</div>
+												<div class="image-add-total">0</div>
+												<div class="image-add-znak">+</div>
+											</div>
+										</div>
+										<div class="title__total-price total-price_width20">
+											<div class="price_numbers color__grey">562</div>
+											<svg class="svg-rubl color__grey">
+												<use xlink:href="image/sprite.svg#icon--znac_publy"></use>
+											</svg>
+										</div>
+									</div>
+								</div>
 							</div>
 						</div>
 					</div>
 				</div>
 			</div>
-			<div class="header__nav">
-				<div class="wrapper__header__nav"><a class="header__nav-items">ПИЦЦА</a><a class="header__nav-items">ЗАКУСКИ</a><a class="header__nav-items">РОЛЛЫ</a><a class="header__nav-items">ПАСТА</a><a class="header__nav-items">СУПЫ</a><a class="header__nav-items">САЛАТЫ</a><a class="header__nav-items">ДЕСЕРТЫ</a><a class="header__nav-items">НАПИТКИ</a><a class="header__nav-icon">
-						<svg class="header-nav__svg nav__svg_instagram">
-							<use xlink:href="image/sprite.svg#icon--instagram"></use>
-						</svg>
-						<svg class="header-nav__svg nav__svg_vk">
-							<use xlink:href="image/sprite.svg#icon--kontact"></use>
-						</svg></a></div>
-			</div>
 		</header>
+		<div class="header__nav">
+			<div class="wrapper__header__nav">
+				<!--добавим класс active для меню в котором мы находимся--><a class="header__nav-items header__nav-items_active">ПИЦЦА</a><a class="header__nav-items">ЗАКУСКИ</a><a class="header__nav-items">РОЛЛЫ</a><a class="header__nav-items">ПАСТА</a><a class="header__nav-items">СУПЫ</a><a class="header__nav-items">САЛАТЫ</a><a class="header__nav-items">ДЕСЕРТЫ</a><a class="header__nav-items">НАПИТКИ</a><a class="header__nav-icon">
+					<svg class="header-nav__svg nav__svg_instagram">
+						<use xlink:href="image/sprite.svg#icon--instagram"></use>
+					</svg>
+					<svg class="header-nav__svg nav__svg_vk">
+						<use xlink:href="image/sprite.svg#icon--kontact"></use>
+					</svg></a>
+			</div>
+		</div>
 		<div class="slider-contant"><img src="image/slider1.png" alt="slider-photo" class="slider-layer slider-layer1"><img src="image/slider2.png" alt="slider-photo" class="slider-layer slider-layer2">
 			<svg class="slider_arrow-left slider_arrow">
 				<use xlink:href="image/sprite.svg#icon--slider_left"></use>
@@ -61,7 +100,7 @@
 			<div class="main-content">
 				<!-- это блок товара в главном блоке с фото товра и описанием-->
 				<div class="main-content__block">
-					<div class="block__item-photo"><a href=""><img src="../image/margarita.png" alt="pizza-margarita"></a></div>
+					<div class="block__item-photo"><a href=""><img src="../image/pizza-margarita.png" alt="pizza-margarita"></a></div>
 					<div class="block__item-title">МАРГАРИТА</div>
 					<div class="block__item-description">Томатный соус, томаты, двойная  порция моцареллы на фирменном тесте</div>
 					<div class="block__item-size">
@@ -74,7 +113,7 @@
 					</div>
 					<div class="block__item-buy">
 						<div class="block__item-price">
-							<div class="price_numbers">562</div>
+							<div class="price_numbers">429</div>
 							<svg class="svg-rubl">
 								<use xlink:href="image/sprite.svg#icon--znac_publy"></use>
 							</svg>
@@ -86,9 +125,9 @@
 				</div>
 				<!-- это блок товара в главном блоке с фото товра и описанием-->
 				<div class="main-content__block">
-					<div class="block__item-photo"><a href=""><img src="../image/margarita.png" alt="pizza-margarita"></a></div>
-					<div class="block__item-title">МАРГАРИТА</div>
-					<div class="block__item-description">Томатный соус, томаты, двойная  порция моцареллы на фирменном тесте</div>
+					<div class="block__item-photo"><a href=""><img src="../image/pizza-po_derevenski.png" alt="pizza-po_derevenski"></a></div>
+					<div class="block__item-title">ПО-ДЕРЕВЕНСКИ</div>
+					<div class="block__item-description">Куриная грудка моцарелла, фирменный соус  “Итальяно”, ароматный лук</div>
 					<div class="block__item-size">
 						<form name="form-size-pizza" method="post">
 							<input type="radio" value="add" name="30" id="30cm">
@@ -99,7 +138,7 @@
 					</div>
 					<div class="block__item-buy">
 						<div class="block__item-price">
-							<div class="price_numbers">562</div>
+							<div class="price_numbers">440</div>
 							<svg class="svg-rubl">
 								<use xlink:href="image/sprite.svg#icon--znac_publy"></use>
 							</svg>
@@ -111,9 +150,9 @@
 				</div>
 				<!-- это блок товара в главном блоке с фото товра и описанием-->
 				<div class="main-content__block">
-					<div class="block__item-photo"><a href=""><img src="../image/margarita.png" alt="pizza-margarita"></a></div>
-					<div class="block__item-title">МАРГАРИТА</div>
-					<div class="block__item-description">Томатный соус, томаты, двойная  порция моцареллы на фирменном тесте</div>
+					<div class="block__item-photo"><a href=""><img src="../image/pizza-gavayskaya.png" alt="pizza-gavayskaya"></a></div>
+					<div class="block__item-title">ГАВАЙСКАЯ</div>
+					<div class="block__item-description">нежная курица, сочный ароматный ананас, болгарский перец</div>
 					<div class="block__item-size">
 						<form name="form-size-pizza" method="post">
 							<input type="radio" value="add" name="30" id="30cm">
@@ -124,7 +163,7 @@
 					</div>
 					<div class="block__item-buy">
 						<div class="block__item-price">
-							<div class="price_numbers">562</div>
+							<div class="price_numbers">479</div>
 							<svg class="svg-rubl">
 								<use xlink:href="image/sprite.svg#icon--znac_publy"></use>
 							</svg>
@@ -136,8 +175,8 @@
 				</div>
 				<!-- это блок товара в главном блоке с фото товра и описанием-->
 				<div class="main-content__block">
-					<div class="block__item-photo"><a href=""><img src="../image/margarita.png" alt="pizza-margarita"></a></div>
-					<div class="block__item-title">МАРГАРИТА</div>
+					<div class="block__item-photo"><a href=""><img src="../image/pizza-chili.png" alt="pizza-chili"></a></div>
+					<div class="block__item-title">ЧИЛИ</div>
 					<div class="block__item-description">Томатный соус, томаты, двойная  порция моцареллы на фирменном тесте</div>
 					<div class="block__item-size">
 						<form name="form-size-pizza" method="post">
@@ -149,7 +188,7 @@
 					</div>
 					<div class="block__item-buy">
 						<div class="block__item-price">
-							<div class="price_numbers">562</div>
+							<div class="price_numbers">429</div>
 							<svg class="svg-rubl">
 								<use xlink:href="image/sprite.svg#icon--znac_publy"></use>
 							</svg>
@@ -161,9 +200,9 @@
 				</div>
 				<!-- это блок товара в главном блоке с фото товра и описанием-->
 				<div class="main-content__block">
-					<div class="block__item-photo"><a href=""><img src="../image/margarita.png" alt="pizza-margarita"></a></div>
-					<div class="block__item-title">МАРГАРИТА</div>
-					<div class="block__item-description">Томатный соус, томаты, двойная  порция моцареллы на фирменном тесте</div>
+					<div class="block__item-photo"><a href=""><img src="../image/pizza-vetchina_gribi.png" alt="pizza-vetchina_gribi"></a></div>
+					<div class="block__item-title">ВЕТЧИНА И ГРИБЫ</div>
+					<div class="block__item-description">Золотистые шампиньоны, сочная ветчина,....</div>
 					<div class="block__item-size">
 						<form name="form-size-pizza" method="post">
 							<input type="radio" value="add" name="30" id="30cm">
@@ -174,7 +213,7 @@
 					</div>
 					<div class="block__item-buy">
 						<div class="block__item-price">
-							<div class="price_numbers">562</div>
+							<div class="price_numbers">419</div>
 							<svg class="svg-rubl">
 								<use xlink:href="image/sprite.svg#icon--znac_publy"></use>
 							</svg>
@@ -186,9 +225,9 @@
 				</div>
 				<!-- это блок товара в главном блоке с фото товра и описанием-->
 				<div class="main-content__block">
-					<div class="block__item-photo"><a href=""><img src="../image/margarita.png" alt="pizza-margarita"></a></div>
-					<div class="block__item-title">МАРГАРИТА</div>
-					<div class="block__item-description">Томатный соус, томаты, двойная  порция моцареллы на фирменном тесте</div>
+					<div class="block__item-photo"><a href=""><img src="../image/pizza-chicken_paprik.png" alt="pizza-chicken_paprik"></a></div>
+					<div class="block__item-title">КУРИНАЯ С ПАПРИКОЙ</div>
+					<div class="block__item-description">куриная грудка, моцарелла, фирменный соус, сладкая паприка</div>
 					<div class="block__item-size">
 						<form name="form-size-pizza" method="post">
 							<input type="radio" value="add" name="30" id="30cm">
@@ -199,7 +238,7 @@
 					</div>
 					<div class="block__item-buy">
 						<div class="block__item-price">
-							<div class="price_numbers">562</div>
+							<div class="price_numbers">499</div>
 							<svg class="svg-rubl">
 								<use xlink:href="image/sprite.svg#icon--znac_publy"></use>
 							</svg>
@@ -211,9 +250,9 @@
 				</div>
 				<!-- это блок товара в главном блоке с фото товра и описанием-->
 				<div class="main-content__block">
-					<div class="block__item-photo"><a href=""><img src="../image/margarita.png" alt="pizza-margarita"></a></div>
-					<div class="block__item-title">МАРГАРИТА</div>
-					<div class="block__item-description">Томатный соус, томаты, двойная  порция моцареллы на фирменном тесте</div>
+					<div class="block__item-photo"><a href=""><img src="../image/pizza-papperoni.png" alt="pizza-papperoni"></a></div>
+					<div class="block__item-title">ПАППЕРОНИ</div>
+					<div class="block__item-description">пепперони, сладкий перец, моцарелла, фирменный соус “Итальяно”</div>
 					<div class="block__item-size">
 						<form name="form-size-pizza" method="post">
 							<input type="radio" value="add" name="30" id="30cm">
@@ -224,7 +263,7 @@
 					</div>
 					<div class="block__item-buy">
 						<div class="block__item-price">
-							<div class="price_numbers">562</div>
+							<div class="price_numbers">349</div>
 							<svg class="svg-rubl">
 								<use xlink:href="image/sprite.svg#icon--znac_publy"></use>
 							</svg>
@@ -236,9 +275,9 @@
 				</div>
 				<!-- это блок товара в главном блоке с фото товра и описанием-->
 				<div class="main-content__block">
-					<div class="block__item-photo"><a href=""><img src="../image/margarita.png" alt="pizza-margarita"></a></div>
-					<div class="block__item-title">МАРГАРИТА</div>
-					<div class="block__item-description">Томатный соус, томаты, двойная  порция моцареллы на фирменном тесте</div>
+					<div class="block__item-photo"><a href=""><img src="../image/pizza-barbeku.png" alt="pizza-barbeku"></a></div>
+					<div class="block__item-title">БАРБЕКЮ</div>
+					<div class="block__item-description">куриное филе, свежие овощи, гриль бекон, фирменный томатный соус, моцарелла</div>
 					<div class="block__item-size">
 						<form name="form-size-pizza" method="post">
 							<input type="radio" value="add" name="30" id="30cm">
@@ -249,7 +288,107 @@
 					</div>
 					<div class="block__item-buy">
 						<div class="block__item-price">
-							<div class="price_numbers">562</div>
+							<div class="price_numbers">449</div>
+							<svg class="svg-rubl">
+								<use xlink:href="image/sprite.svg#icon--znac_publy"></use>
+							</svg>
+						</div>
+						<div class="block__item-basket">
+							<div class="basket-block button-left">В корзину</div>
+						</div>
+					</div>
+				</div>
+				<!-- это блок товара в главном блоке с фото товра и описанием-->
+				<div class="main-content__block">
+					<div class="block__item-photo"><a href=""><img src="../image/pizza-bavarskaya.png" alt="pizza-bavarskaya"></a></div>
+					<div class="block__item-title">БАВАРСКАЯ</div>
+					<div class="block__item-description">копченный колбаски, соленые огурчики, ароматный бекон</div>
+					<div class="block__item-size">
+						<form name="form-size-pizza" method="post">
+							<input type="radio" value="add" name="30" id="30cm">
+							<label for="30cm">d 30 см</label>
+							<input type="radio" value="add" name="40" id="40cm">
+							<label for="40cm">d 40 см</label>
+						</form>
+					</div>
+					<div class="block__item-buy">
+						<div class="block__item-price">
+							<div class="price_numbers">499</div>
+							<svg class="svg-rubl">
+								<use xlink:href="image/sprite.svg#icon--znac_publy"></use>
+							</svg>
+						</div>
+						<div class="block__item-basket">
+							<div class="basket-block button-left">В корзину</div>
+						</div>
+					</div>
+				</div>
+				<!-- это блок товара в главном блоке с фото товра и описанием-->
+				<div class="main-content__block">
+					<div class="block__item-photo"><a href=""><img src="../image/pizza-sea.png" alt="pizza-sea"></a></div>
+					<div class="block__item-title">МОРСКАЯ</div>
+					<div class="block__item-description">игровая креветка, сочный тунец, ароматные кальмары, пикантные каперсы</div>
+					<div class="block__item-size">
+						<form name="form-size-pizza" method="post">
+							<input type="radio" value="add" name="30" id="30cm">
+							<label for="30cm">d 30 см</label>
+							<input type="radio" value="add" name="40" id="40cm">
+							<label for="40cm">d 40 см</label>
+						</form>
+					</div>
+					<div class="block__item-buy">
+						<div class="block__item-price">
+							<div class="price_numbers">649</div>
+							<svg class="svg-rubl">
+								<use xlink:href="image/sprite.svg#icon--znac_publy"></use>
+							</svg>
+						</div>
+						<div class="block__item-basket">
+							<div class="basket-block button-left">В корзину</div>
+						</div>
+					</div>
+				</div>
+				<!-- это блок товара в главном блоке с фото товра и описанием-->
+				<div class="main-content__block">
+					<div class="block__item-photo"><a href=""><img src="../image/pizza-slivochaya.png" alt="pizza-slivochaya"></a></div>
+					<div class="block__item-title">СЛИВОЧНАЯ</div>
+					<div class="block__item-description">ветчина, ароматные грибочки, сливки</div>
+					<div class="block__item-size">
+						<form name="form-size-pizza" method="post">
+							<input type="radio" value="add" name="30" id="30cm">
+							<label for="30cm">d 30 см</label>
+							<input type="radio" value="add" name="40" id="40cm">
+							<label for="40cm">d 40 см</label>
+						</form>
+					</div>
+					<div class="block__item-buy">
+						<div class="block__item-price">
+							<div class="price_numbers">479</div>
+							<svg class="svg-rubl">
+								<use xlink:href="image/sprite.svg#icon--znac_publy"></use>
+							</svg>
+						</div>
+						<div class="block__item-basket">
+							<div class="basket-block button-left">В корзину</div>
+						</div>
+					</div>
+				</div>
+				<!-- это блок товара в главном блоке с фото товра и описанием-->
+				<div class="main-content__block">
+					<div class="block__item-photo"><a href=""><img src="../image/pizza-italiano.png" alt="pizza-italiano"></a></div>
+					<div class="block__item-title">ИТАЛЬЯНО</div>
+					<div class="block__item-description">моцарелла, венские колбаски, ветчина, золотистые грибочки</div>
+					<div class="block__item-size">
+						<form name="form-size-pizza" method="post">
+							<input type="radio" value="add" name="30" id="30cm">
+							<label for="30cm">d 30 см</label>
+							<input type="radio" value="add" name="40" id="40cm">
+							<label for="40cm">d 40 см</label>
+						</form>
+					</div>
+					<div class="block__item-buy">
+						<div class="block__item-price">
+							<div class="price_numbers">509</div>
 							<svg class="svg-rubl">
 								<use xlink:href="image/sprite.svg#icon--znac_publy"></use>
 							</svg>

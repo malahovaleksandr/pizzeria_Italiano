@@ -12,7 +12,7 @@
   width: 100%;
   flex: 1 0 auto;
   height: 205px;
-  overflow: hidden;
+  //overflow: hidden;
 }
 .header-title__wrapper{
   max-width: 1200px;
@@ -74,11 +74,16 @@
   font-weight: bold;
   text-transform: uppercase;
 }
+
 .svg-rubl{
   display: inline-block;
   width: 19px;
   height: 19px;
   fill: #ffffff;
+}
+.color__grey{//модификатор цвета надписи и fill
+  color:#505050;
+  fill:#505050;
 }
 .title_tel-basket{
   display: flex;
@@ -108,6 +113,77 @@
         height: 35px;
       }
     }
+ ////меню при наведении мышкой на корзину показывает какие товары добавлены
+.tel-basket__button-basket{
+  position: relative;
+}
+.basket-buy-items{
+  background: #fff;
+  border-radius: 4px;
+  color:#94c579;
+  width: 600px;
+  font-weight: bold;
+  font-size: 1.5rem;
+  position: absolute;
+  top: 35px;
+  right: 0;
+  padding: 15px 15px 30px 15px;
+  z-index: 5;
+  display: flex;
+  flex-direction: column;
+}
+.block-basket_items{
+  border-bottom: 1px solid #a7a7a7;
+  display: flex;
+  align-items: flex-end;
+  justify-content: space-between;
+  .block-basket_item__name{
+  color:#505050;
+    font-size:1.125rem ;
+  }
+  .block-basket_item__add{
+    margin-left:auto;
+  }
+  .total-price_width20{
+    width:20%;
+  }
+
+}
+//настройка кнопки добавить и уменьшить заказ
+.block-add-items{
+  display: flex;
+  .image-add-znak{
+    margin: 0 4px;
+    width: 20px;
+    height: 20px;
+    font-size: 1.5rem;
+    color:#fff;
+    border-radius: 3px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: #8aba1e; /* Old browsers */
+    background: -moz-linear-gradient(top,  #8aba1e 0%, #0f6e41 100%); /* FF3.6-15 */
+    background: -webkit-linear-gradient(top,  #8aba1e 0%,#0f6e41 100%); /* Chrome10-25,Safari5.1-6 */
+    background: linear-gradient(to bottom,  #8aba1e 0%,#0f6e41 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#8aba1e', endColorstr='#0f6e41',GradientType=0 ); /* IE6-9 */
+
+  }
+  .image-add-total{
+    height: 20px;
+    font-size: 1rem;
+    color:#505050;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    border: 1px solid #b9b9b9;
+    padding: 7px 4px 2px 4px;
+    min-width:38px;
+  }
+
+}
+
+
 .header__nav{
   width: 100%;
   height: 40px;
@@ -129,9 +205,18 @@
     cursor: pointer;
     font-size: 20px;
     display: inline-block;
-    margin: 0 10px;
+    padding: 0 10px;
+    height: 100%;
+    display: flex;
+    align-items: center;
     font-family: MyriadProBold;
     font-weight: bold;
+    &:hover{
+      background: rgba(#fff,0.12);
+    }
+  }
+  .header__nav-items_active{
+    border-bottom: 3px solid red;
   }
   .header__nav-icon{
     margin-left:auto;
