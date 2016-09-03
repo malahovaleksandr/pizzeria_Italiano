@@ -51,6 +51,15 @@
     margin-left:auto;
   }
 }
+.block__item-buy_justify{
+  justify-content: space-between;
+  align-items: flex-end;
+}
+.block__item_weight{
+    font-size: 19px;
+    font-family: "MyriadProRegular";
+    color: #fff;
+}
 
 //настройка вида кнопки
 .basket-block{
