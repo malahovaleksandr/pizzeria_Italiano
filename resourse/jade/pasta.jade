@@ -18,26 +18,27 @@ html(lang="en")
                 //добавим класс active для меню в котором мы находимся
                 a(href="../index.html").header__nav-items
                     | ПИЦЦА
-                a(href="zakuski.html").header__nav-items
+                a(href="snacks.html").header__nav-items
                     | ЗАКУСКИ
                 a(href="rols.html").header__nav-items
                     | РОЛЛЫ
-                a(href="pasta.html").header__nav-items.header__nav-items_active
+                a(href="#").header__nav-items.header__nav-items_active
                     | ПАСТА
                 a(href="soups.html").header__nav-items
                     | СУПЫ
                 a(href="salat.html").header__nav-items
                     | САЛАТЫ
-                a(href="../index.html").header__nav-items
+                a(href="sweet.html").header__nav-items
                     | ДЕСЕРТЫ
                 a(href="drinks.html").header__nav-items
                     | НАПИТКИ
-                a.header__nav-icon
-                    svg.header-nav__svg.nav__svg_instagram
-                        use(xlink:href="../image/sprite.svg#icon--instagram" )
-
-                    svg.header-nav__svg.nav__svg_vk
-                        use(xlink:href="../image/sprite.svg#icon--kontact")
+                a(href="#").header__nav-icon
+                    a(href="#")
+                        svg.header-nav__svg.nav__svg_instagram
+                            use(xlink:href="../image/sprite.svg#icon--instagram" )
+                    a(href="#")
+                        svg.header-nav__svg.nav__svg_vk
+                            use(xlink:href="../image/sprite.svg#icon--kontact")
         include ./add/slider
 
         .wraper-main
@@ -51,8 +52,8 @@ html(lang="en")
 
 
 
-            footer.footer
-                include ./add/footer
+        footer.footer
+            include ./add/footer
 
 
 
