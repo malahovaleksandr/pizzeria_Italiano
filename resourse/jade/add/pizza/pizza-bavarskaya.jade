@@ -1,0 +1,27 @@
+// это блок товара в главном блоке с фото товра и описанием
+.main-content__block
+    .block__item-photo
+        a(href="")
+            img(src="image/pizza-bavarskaya.png" alt="pizza-bavarskaya")
+    .block__item-title
+        |БАВАРСКАЯ
+    .block__item-description.
+        копченный колбаски, соленые огурчики, ароматный бекон
+    .block__item-size
+        form(name="form-size-pizza", method="post")
+
+                input(type="radio", value="30", name="add", id="30-cmpizza-bavarskaya", checked="checked")
+                label(for="30-cmpizza-bavarskaya").item-size_label
+                    | d 30 см
+                input(type="radio", value="40", name="add",id="40-cmpizza-bavarskaya")
+                label(for="40-cmpizza-bavarskaya").item-size_label
+                    | d 40 см
+
+    .block__item-buy
+        .block__item-price
+            .price_numbers 499
+            svg.svg-rubl
+               use(xlink:href="image/sprite.svg#icon--znac_publy")
+        .block__item-basket
+            .basket-block.button-left
+                |В корзину

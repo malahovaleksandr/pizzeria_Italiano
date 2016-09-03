@@ -3,35 +3,169 @@
 	<head>
 		<meta charset="UTF-8">
 		<meta name="viewport" content="width=device-width, initial-scale=1.0">
-		<meta name="description" content="loft">
-		<link el="shorcut icon" href="../favicon.ico" type="image/x-icon">
-		<link rel="icon" href="../favicon.ico" type="image/x-icon">
-		<link rel="stylesheet" href="/css/main.css">
-		<link src="concat.css" type="text/css">
+		<meta name="description" content="pizza">
+		<!--link(el="shorcut icon" href="../favicon.ico" type="image/x-icon")-->
+		<!--link(rel="icon" href="../favicon.ico" type="image/x-icon")-->
+		<link rel="stylesheet" href="../css/main.css">
 	</head>
 	<body>
-		<div class="main">
-			главный тескт страницы<br>
-			здесь мы видим как работате JADE
-			khjghghg
-			<div class="next">пошел текст</div>
+		<header class="header">
+			<div class="header-title">
+				<div class="header-title__wrapper">
+					<div class="title__logo"><img src="../image/logo1.png" alt="логотип" class="logo__image">
+						<!--svg.svg-logo-italiano-->
+						<!--     use(xlink:href="image/sprite.svg#icon--italliano")-->
+						<!--svg.svg-logo-pizza-->
+						<!--     use(xlink:href="image/sprite.svg#icon--pizza")-->
+					</div>
+					<div class="title__content">
+						<div class="title__nav">
+							<div class="title__nav-item"><a href="" class="title__nav-link">АКЦИИ</a></div>
+							<div class="title__nav-item"><a href="" class="title__nav-link title__nav-link_active">ВАКАНСИИ</a></div>
+							<div class="title__nav-item"><a href="" class="title__nav-link">КОНТАКТЫ</a></div>
+							<div class="title__nav-item"><a href="" class="title__nav-link">АТМОСФЕРА</a></div>
+						</div>
+						<div class="title__total-price">
+							<div class="price_numbers">562</div>
+							<svg class="svg-rubl">
+								<use xlink:href="../image/sprite.svg#icon--znac_publy"></use>
+							</svg>
+						</div>
+						<div class="title_tel-basket">
+							<div class="tel-basket__svg-call"><a href="tel:365365">
+									<svg class="svg_tel_znachok">
+										<use xlink:href="../image/sprite.svg#icon--tel_znachok">
+											<animate dur="2s" values="red; yellow; green" keyTimes="0; 0.5; 1" attributeName="fill" repeatCount="indefinite"></animate>
+										</use>
+									</svg></a></div>
+							<div class="tel-basket__telephon">365-365</div>
+							<div class="tel-basket__button-basket">
+								<div class="basket-block button-basket-modify">
+									<svg class="svg_znac_korzina">
+										<use xlink:href="../image/sprite.svg#icon--znac_korzina"></use>
+									</svg>КОРЗИНА
+								</div>
+								<div class="basket-buy-items">
+									<div class="block-basket_title">В Вашей корзине</div>
+									<div class="block-basket_items">
+										<div class="block-basket_item__name">Наименование</div>
+										<div class="block-basket_item__add">
+											<!--это блок на добавление-отнимание кол-ва продукта в заказ-->
+											<div class="block-add-items">
+												<div class="image-add-znak">
+													<svg class="block-add-items_svg_znak">
+														<use xlink:href="../image/sprite.svg#icon--minus"></use>
+													</svg>
+												</div>
+												<div class="image-add-total">0</div>
+												<div class="image-add-znak">
+													<svg class="block-add-items_svg_znak">
+														<use xlink:href="../image/sprite.svg#icon--plus"></use>
+													</svg>
+												</div>
+											</div>
+										</div>
+										<div class="title__total-price total-price_width20">
+											<div class="price_numbers color__grey">0</div>
+											<svg class="svg-rubl color__grey">
+												<use xlink:href="../image/sprite.svg#icon--znac_publy"></use>
+											</svg>
+										</div>
+									</div>
+									<div class="block-basket_items">
+										<div class="block-basket_item__name">Наименование</div>
+										<div class="block-basket_item__add">
+											<!--это блок на добавление-отнимание кол-ва продукта в заказ-->
+											<div class="block-add-items">
+												<div class="image-add-znak">
+													<svg class="block-add-items_svg_znak">
+														<use xlink:href="../image/sprite.svg#icon--minus"></use>
+													</svg>
+												</div>
+												<div class="image-add-total">63</div>
+												<div class="image-add-znak">
+													<svg class="block-add-items_svg_znak">
+														<use xlink:href="../image/sprite.svg#icon--plus"></use>
+													</svg>
+												</div>
+											</div>
+										</div>
+										<div class="title__total-price total-price_width20">
+											<div class="price_numbers color__grey">63</div>
+											<svg class="svg-rubl color__grey">
+												<use xlink:href="../image/sprite.svg#icon--znac_publy"></use>
+											</svg>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</header>
+		<div class="header__nav">
+			<div class="wrapper__header__nav">
+				<!--добавим класс active для меню в котором мы находимся--><a href="../index.html" class="header__nav-items">ПИЦЦА</a><a href="zakuski.html" class="header__nav-items">ЗАКУСКИ</a><a href="rols.html" class="header__nav-items">РОЛЛЫ</a><a href="pasta.html" class="header__nav-items">ПАСТА</a><a href="soups.html" class="header__nav-items">СУПЫ</a><a href="salat.html" class="header__nav-items">САЛАТЫ</a><a href="zakuski.html" class="header__nav-items">ДЕСЕРТЫ</a><a href="drinks.html" class="header__nav-items">НАПИТКИ</a><a class="header__nav-icon">
+					<svg class="header-nav__svg nav__svg_instagram">
+						<use xlink:href="image/sprite.svg#icon--instagram"></use>
+					</svg>
+					<svg class="header-nav__svg nav__svg_vk">
+						<use xlink:href="image/sprite.svg#icon--kontact"></use>
+					</svg></a>
+			</div>
 		</div>
-		<div class="titul"><img src="/image/dot.jpg"/>
-			<div class="mixinWork">титульный текст</div>
+		<!-- вставляем слайдер-->
+		<div class="slider-contant"><img src="../image/slider_vacancia.jpg" alt="slider-photo" class="slider-layer slider-layer1">
+			<svg class="slider_arrow-left slider_arrow">
+				<use xlink:href="../image/sprite.svg#icon--slider_left"></use>
+			</svg>
+			<svg class="slider_arrow-right slider_arrow">
+				<use xlink:href="../image/sprite.svg#icon--slider_right"></use>
+			</svg>
 		</div>
-		<div class="titul"><img src="/img/cat.jpg" alt="cat"/>
-			<div class="mixinWork">другая подсказка2</div>
+		<div class="wraper-main">
+			<div class="main-content">
+				<div class="content-vacancies">
+					<div class="vacancies">
+						<div class="vacancies_profession">Официант</div>
+						<div class="vacancies_description">
+							Тяжело нынче отцам. Нужно постоянно следить за тем,
+							что сын скачивает из Интернета, а дочь туда выкладывает. anekdotov.net
+							sdfasfqwdqwd
+						</div>
+						<div class="vacancies_text">и еще какой то текст</div>
+					</div>
+					<div class="vacancies">
+						<div class="vacancies_profession">Повар</div>
+						<div class="vacancies_description">
+							Тяжело нынче отцам. Нужно постоянно следить за тем,
+							 что сын скачивает из Интернета, а дочь туда выкладывает. anekdotov.net
+							sdfasfqwdqwd
+						</div>
+						<div class="vacancies_text">и еще какой то текст</div>
+					</div>
+					<div class="vacancies">
+						<div class="vacancies_profession">Администратор</div>
+						<div class="vacancies_description">
+							Мужик приходит жаловаться в магазин с купленой неделю назад бензопилой:
+							 — Я вот купил у вас инструмент. В инструкции написано, что с е
+							 е помощью можно за день распилить 5 кубометров дров, а я как
+							 не стараюсь, больше 3 не получается. Продавец:
+							 — Ну давайте
+							 посмотрим, И включает бензопилу. Мужик:
+							 — Ух ты!, а че это она у вас зажужжала?!?!?! anekdotov.net
+						</div>
+						<div class="vacancies_text">и еще какой то текст</div>
+					</div>
+				</div>
+			</div>
+			<footer class="footer">
+				<div class="wrapper-footer">
+					<div class="footer-name">ИТАЛЬЯНО PIZZA, 2016</div>
+					<div class="footer-adress">г. Саранск, пр-кт Ленина, д.14</div>
+				</div>
+			</footer>
 		</div>
-		<div class="tabl">
-			<li class="item"></li>
-			<li class="item"></li>
-			<li class="item"></li>
-		</div>
-		<ul class="form">
-			<li class="clas"> пункт</li>
-		</ul>
-		<footer class="footer">2016
-			<div class="footer_about">футер обо мне</div>
-		</footer>
 	</body>
 </html>

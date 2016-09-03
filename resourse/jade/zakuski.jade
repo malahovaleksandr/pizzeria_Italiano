@@ -1,0 +1,61 @@
+
+include add/_mixin
+
+doctype HTML
+html(lang="en")
+    head
+        meta(charset="UTF-8")
+        meta(name="viewport"  content="width=device-width, initial-scale=1.0")
+        meta(name="description" content="pizza")
+
+        //link(el="shorcut icon" href="../favicon.ico" type="image/x-icon")
+        //link(rel="icon" href="../favicon.ico" type="image/x-icon")
+
+        link(rel="stylesheet" href="css/main.css")
+        block head
+
+    body
+
+        include ./add/header
+        .header__nav
+            .wrapper__header__nav
+                //добавим класс active для меню в котором мы находимся
+                a.header__nav-items.header__nav-items_active
+                    | ПИЦЦА
+                a.header__nav-items
+                    | ЗАКУСКИ
+                a.header__nav-items
+                    | РОЛЛЫ
+                a.header__nav-items
+                    | ПАСТА
+                a.header__nav-items
+                    | СУПЫ
+                a.header__nav-items
+                    | САЛАТЫ
+                a.header__nav-items
+                    | ДЕСЕРТЫ
+                a.header__nav-items
+                    | НАПИТКИ
+                a.header__nav-icon
+                    svg.header-nav__svg.nav__svg_instagram
+                        use(xlink:href="image/sprite.svg#icon--instagram" )
+
+                    svg.header-nav__svg.nav__svg_vk
+                        use(xlink:href="image/sprite.svg#icon--kontact")
+        include ./add/slider
+
+        .wraper-main
+            .main-content
+                include ./add/pizza/pizza-margarita
+                include ./add/pizza/pizza-po_derevenski
+                |shshmdshmhsmd
+
+
+
+
+            footer.footer
+                include ./add/footer
+
+
+
+

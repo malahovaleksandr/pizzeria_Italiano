@@ -11,6 +11,9 @@ var gulp = require('gulp'),
     svgmin = require('gulp-svgmin'),//минифицирует свг файлы, убирая не нужные атрибуты , такие как fiil
     minify = require('gulp-minify'),// для минификации js файла
     concat = require('gulp-concat'),// конкат для js
+
+   
+
     clean = require('gulp-clean');//перед запуском удаляет старые файлы
     
 
@@ -29,6 +32,8 @@ gulp.task('scss', function () {
         .pipe(browserSync.stream());
 
 });
+//минимизация картинок
+
 // подключаем спрайт svg
 gulp.task('svg_sprite', function() {
     gulp.src($.config.paths.svg.src)
@@ -104,8 +109,9 @@ gulp.task('jadePhp', function() {
 ///подключаем WATCH
 gulp.task('watch', function () {
 
-    gulp.watch($.config.paths.jade.srcWatch, ['jade','jadeIndex']).on('change', browserSync.reload);
+    gulp.watch($.config.paths.jade.srcWatch, ['jade']).on('change', browserSync.reload);
     gulp.watch($.config.paths.jade.srcIndex, ['jadeIndex']).on('change', browserSync.reload);
+    gulp.watch($.config.paths.jade.srcWatchAdd, ['jade']).on('change', browserSync.reload);
     gulp.watch($.config.paths.watch.src, ['scss']).on('change', browserSync.reload);
     gulp.watch($.config.paths.svg.src, ['svg_sprite']).on('change', browserSync.reload);
     gulp.watch($.config.paths.js.src, ['scripts']).on('change', browserSync.reload);

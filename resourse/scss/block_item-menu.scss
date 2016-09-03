@@ -8,6 +8,7 @@
   justify-content: flex-start;
   align-items: center;
   color:white;
+
 }
 .block__item-photo{
   height: 250px;
@@ -22,26 +23,32 @@
   align-self: flex-start;
   margin-top: 20px;
   font-family: MyriadProBold;
+
+
 }
 .block__item-description{
   margin-top: 10px;
   width: 325px;
   font-size:1.05rem ;
+  text-align: justify;
 }
 .block__item-size{
-  margin-top: 15px;
+  margin-top: auto;
+  //margin-top: 30px;
   align-self: flex-start;
+  .item-size_label{
+    margin-right:10px;
+  }
 }
 .block__item-buy{
   display: flex;
   justify-content: flex-start;
   align-self: flex-start;
-  margin-top: auto;
+  margin-top: 15px;
   width: 100%;
 
   .block__item-basket {
     margin-left:auto;
-
   }
 }
 
@@ -55,7 +62,7 @@
   font-size:1.05rem ;
   display: flex;
   justify-content: center;
-  align-items: center;
+  align-items:center;
   cursor: pointer;
   /* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#8aba1e+0,0f6e41+100 */
   background: #8aba1e; /* Old browsers */
@@ -63,8 +70,13 @@
   background: -webkit-linear-gradient(top,  #8aba1e 0%,#0f6e41 100%); /* Chrome10-25,Safari5.1-6 */
   background: linear-gradient(to bottom,  #8aba1e 0%,#0f6e41 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
   filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#8aba1e', endColorstr='#0f6e41',GradientType=0 ); /* IE6-9 */
-
+  .svg_znac_korzina{
+    fill:#fff;
+    width: 20px;
+    margin-right: 10px;
+  }
 }
-.button-left{
+.button-basket-modify{
   margin-left:auto;
+  width:140px ;
 }

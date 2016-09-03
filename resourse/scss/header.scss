@@ -5,7 +5,7 @@
   background-repeat: no-repeat;
   display: flex;
   flex-direction: column;
-  height:245px;
+  height:205px;
 }
 .header-title{
   display: flex;
@@ -15,6 +15,7 @@
   //overflow: hidden;
 }
 .header-title__wrapper{
+  padding: 0 10px;
   max-width: 1200px;
   margin:0 auto;
   width: 100%;
@@ -23,24 +24,49 @@
 
 }
 .title__logo{
+  margin-top: 70px;
+  width: 50%;
+  max-width: 50%;
+
+//настройки если лого свг
+  //display: flex;
+  //flex-direction: column;
   .logo__image{
-    width: 100%;
-    height: 100%;
+    width: 70%;
+    //height: 100%;
   }
+  //настройка лого если свг
+  //.svg-logo-italiano{
+  //  width: 405px;
+  //  height: 45px;
+  //  fill:#07ca09;
+  //}
+  //.svg-logo-pizza{
+  //  margin-top:20px;
+  //  width: 190px;
+  //  height: 35px;
+  //  fill:#e30613;
+  //}
 }
 .title__content{
   margin-top: 70px;
   margin-left: auto;
-  width:42%;
+  width:50%;
+  padding-right:25px;
   display: flex;
   flex-direction: column;
 }
 .title__nav{
   display: flex;
+  justify-content: flex-end;
+  width: 100%;
 }
 .title__nav-item{
   margin:0 15px;
   font-size: 18px;
+  font-family: "MyriadProBold";
+  font-weight: bold;
+
   height: 25px;
   &:last-child{
     margin-right: 0;
@@ -54,6 +80,10 @@
     &:hover{
       color:red;
     }
+
+  }
+  .title__nav-link_active{
+    color:red;
   }
 }
 .title__total-price{
@@ -62,7 +92,7 @@
   align-self:flex-end;
   width: 100%;
   display: flex;
-  margin-top: 10px;
+  margin-top: 5px;
   justify-content: flex-end;
   align-items: center;
 
@@ -88,7 +118,7 @@
 .title_tel-basket{
   display: flex;
   align-content:center;
-  justify-content: space-between;
+  justify-content: flex-end;
   align-items: center;
 }
     .tel-basket__svg-call{
@@ -98,13 +128,16 @@
       .svg_tel_znachok{
         width:39px;
         height: 39px;
+
       }
     }
     .tel-basket__telephon{
       font-size: 3.125rem;
       color:#ffffff;
       margin-left: 12px;
-      margin-right: auto;
+      margin-right: 50px;
+      letter-spacing: 2px;
+      line-height: 0.7;
       font-family: MyriadProBold;
     }
     .tel-basket__svg-basket{
@@ -116,6 +149,7 @@
  ////меню при наведении мышкой на корзину показывает какие товары добавлены
 .tel-basket__button-basket{
   position: relative;
+
 }
 .basket-buy-items{
   background: #fff;
@@ -125,7 +159,7 @@
   font-weight: bold;
   font-size: 1.5rem;
   position: absolute;
-  top: 35px;
+  top: 40px;
   right: 0;
   padding: 15px 15px 30px 15px;
   z-index: 5;
@@ -162,23 +196,30 @@
     display: flex;
     justify-content: center;
     align-items: center;
+    cursor: pointer;
     background: #8aba1e; /* Old browsers */
     background: -moz-linear-gradient(top,  #8aba1e 0%, #0f6e41 100%); /* FF3.6-15 */
     background: -webkit-linear-gradient(top,  #8aba1e 0%,#0f6e41 100%); /* Chrome10-25,Safari5.1-6 */
     background: linear-gradient(to bottom,  #8aba1e 0%,#0f6e41 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
     filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#8aba1e', endColorstr='#0f6e41',GradientType=0 ); /* IE6-9 */
-
+    .block-add-items_svg_znak{
+      fill:#fff;
+      width: 14px;
+      height: 14px;
+    }
   }
   .image-add-total{
     height: 20px;
     font-size: 1rem;
     color:#505050;
     display: flex;
+    width: 35px;
     justify-content: flex-end;
     align-items: center;
     border: 1px solid #b9b9b9;
-    padding: 7px 4px 2px 4px;
+    padding: 2px 4px 2px 4px;
     min-width:38px;
+    border-radius: 2px;
   }
 
 }
@@ -204,7 +245,7 @@
     color:white;
     cursor: pointer;
     font-size: 20px;
-    display: inline-block;
+    //display: inline-block;
     padding: 0 10px;
     height: 100%;
     display: flex;
@@ -223,6 +264,7 @@
     display: flex;
     align-items: center;
     fill: rgba(#fff,.6);
+    margin-right: 35px;
 
     .nav__svg_instagram:hover{
       fill: rgba(#fff,.9);

@@ -3,7 +3,8 @@ module.exports = {
         jade: {
             srcIndex:'resourse/jade/index.jade',
             distIndex: 'public',
-            srcWatch: 'resourse/jade/*/*.jade',
+            srcWatch: 'resourse/jade/*.jade',
+            srcWatchAdd: 'resourse/jade/add/*.jade',
             src: 'resourse/jade/*.jade',
             dist: 'public/page'
         },
