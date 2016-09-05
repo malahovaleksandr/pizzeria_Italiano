@@ -1,3 +1,8 @@
+.head-relativ{//добавляем этот див на высоту хедера когда он у нас в положении фиксид, чтоб не нализал на другой контент
+  height:1px;
+  margin-bottom: 239px;
+  width: 100%;
+}
 .header{
   width: 100%;
   background: url('../image/header_back.jpg');
@@ -5,13 +10,16 @@
   background-repeat: no-repeat;
   display: flex;
   flex-direction: column;
-  height:205px;
+  height:240px;
+
+  position: fixed;
+  z-index: 5;
 }
 .header-title{
   display: flex;
   width: 100%;
   flex: 1 0 auto;
-  height: 205px;
+  height: 200px;
   //overflow: hidden;
 }
 .header-title__wrapper{
@@ -92,7 +100,7 @@
   align-self:flex-end;
   width: 100%;
   display: flex;
-  margin-top: 5px;
+  margin-top: 7px;
   justify-content: flex-end;
   align-items: center;
 
@@ -116,6 +124,7 @@
   fill:#505050;
 }
 .title_tel-basket{
+  margin-top:2px;
   display: flex;
   align-content:center;
   justify-content: flex-end;
@@ -236,6 +245,7 @@
   display: flex;
   align-items: center;
   flex: 0 0 auto;
+}
   .wrapper__header__nav{
     max-width: 1200px;
     margin:0 auto;
@@ -268,26 +278,24 @@
     align-items: center;
     fill: rgba(#fff,.6);
     margin-right: 35px;
-
-    .nav__svg_instagram:hover{
+  }
+  .nav__svg_instagram:hover{
+    fill: rgba(#fff,.9);
+    cursor: pointer;
+  }
+  .header-nav__svg{
+    height: 22px;
+    width:22px;
+    margin-left: 10px;
+    fill: rgba(#fff,.6);
+  }
+  .nav__svg_vk{
+    height: 28px;
+    width:28px;
+    &:hover{
       fill: rgba(#fff,.9);
       cursor: pointer;
     }
-    .header-nav__svg{
-      height: 22px;
-      width:22px;
-      margin-left: 10px;
-
-    }
-    .nav__svg_vk{
-      height: 28px;
-      width:28px;
-      &:hover{
-        fill: rgba(#fff,.9);
-        cursor: pointer;
-      }
-
-    }
 
   }
-}
+
