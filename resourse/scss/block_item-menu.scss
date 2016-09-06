@@ -27,12 +27,12 @@
   overflow: hidden;
 }
 .block__item-title{
-  font-size: 1.75rem;
+  font-size: 28px;
   align-self: flex-start;
   margin-top: 10px;
   font-family: MyriadProBold;
-
-
+  font-weight: bold;
+  word-spacing: 6px;
 }
 .block__item-description{
   margin-top: 2px;
@@ -107,4 +107,5 @@
 .button-basket-modify{
   margin-left:auto;
   width:140px ;
+  margin-right: 0;
 }

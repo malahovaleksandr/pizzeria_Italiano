@@ -33,37 +33,22 @@ html(lang="en")
                     a(href="drinks.html").header__nav-items
                         | НАПИТКИ
                     a.header__nav-icon
-                        svg.header-nav__svg.nav__svg_instagram
-                            use(xlink:href="../image/sprite.svg#icon--instagram" )
-
-                        svg.header-nav__svg.nav__svg_vk
-                            use(xlink:href="../image/sprite.svg#icon--kontact")
+                        a(href="vk.com")
+                            svg.header-nav__svg.nav__svg_vk
+                                use(xlink:href="../image/sprite.svg#icon--kontact")
+                        a(href="instagram.com")
+                            svg.header-nav__svg.nav__svg_instagram
+                                use(xlink:href="../image/sprite.svg#icon--instagram" )
         .head-relativ
         include ./add/slider
 
         .wraper-main
             .main-content
-                include ./add/rols/roll-1
-                include ./add/rols/roll-2
-                include ./add/rols/roll-3
-                include ./add/rols/roll-4
-                include ./add/rols/roll-5
-                include ./add/rols/roll-6
-                include ./add/rols/roll-7
-                include ./add/rols/roll-8
-                include ./add/rols/roll-9
-                include ./add/rols/roll-10
-                include ./add/rols/roll-11
-                include ./add/rols/roll-12 
-                include ./add/rols/roll-13
-                include ./add/rols/roll-14
-                include ./add/rols/roll-15
-                include ./add/rols/roll-16
-                include ./add/rols/roll-17
-                include ./add/rols/roll-18
-                include ./add/rols/roll-19
-                include ./add/rols/roll-20
-                include ./add/rols/roll-21
+                include ./add/soup/soup-krem-sup
+                include ./add/soup/soup-cheeze
+                include ./add/soup/soup-solyanka
+                include ./add/soup/soup-kurica
+
 
 
 

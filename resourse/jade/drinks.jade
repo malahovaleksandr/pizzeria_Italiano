@@ -33,11 +33,12 @@ html(lang="en")
                     a(href="#").header__nav-items.header__nav-items_active
                         | НАПИТКИ
                     a.header__nav-icon
-                        svg.header-nav__svg.nav__svg_instagram
-                            use(xlink:href="../image/sprite.svg#icon--instagram" )
-
-                        svg.header-nav__svg.nav__svg_vk
-                            use(xlink:href="../image/sprite.svg#icon--kontact")
+                        a(href="vk.com")
+                            svg.header-nav__svg.nav__svg_vk
+                                use(xlink:href="../image/sprite.svg#icon--kontact")
+                        a(href="instagram.com")
+                            svg.header-nav__svg.nav__svg_instagram
+                                use(xlink:href="../image/sprite.svg#icon--instagram" )
         .head-relativ
         include ./add/slider
 
