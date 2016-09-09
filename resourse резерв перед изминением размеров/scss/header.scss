@@ -1,0 +1,305 @@
+.head-relativ{//добавляем этот див на высоту хедера когда он у нас в положении фиксид, чтоб не нализал на другой контент
+  height:1px;
+  margin-bottom: 179px;
+  width: 100%;
+}
+.header{
+  width: 100%;
+  background: url('../image/header_back.jpg');
+  background-size: cover;
+  background-repeat: no-repeat;
+  display: flex;
+  flex-direction: column;
+  height:180px;
+
+  position: fixed;
+  z-index: 5;
+}
+.header-title{
+  display: flex;
+  width: 100%;
+  flex: 1 0 auto;
+  height: 145px;
+  //overflow: hidden;
+}
+.header-title__wrapper{
+  padding: 0 10px;
+  max-width: 1100px;
+  margin:0 auto;
+  width: 100%;
+  height: 100%;
+  display: flex;
+}
+.title__logo{
+  margin-top: 30px;
+  width: 45%;
+  max-width: 50%;
+
+//настройки если лого свг
+  //display: flex;
+  //flex-direction: column;
+  .logo__image{
+    width: 70%;
+    //height: 100%;
+  }
+  //настройка лого если свг
+  //.svg-logo-italiano{
+  //  width: 405px;
+  //  height: 45px;
+  //  fill:#07ca09;
+  //}
+  //.svg-logo-pizza{
+  //  margin-top:20px;
+  //  width: 190px;
+  //  height: 35px;
+  //  fill:#e30613;
+  //}
+}
+.title__content{
+  margin-top: 30px;
+  margin-left: auto;
+  width:50%;
+  padding-right:25px;
+  display: flex;
+  flex-direction: column;
+}
+.title__nav{
+  display: flex;
+  justify-content: flex-end;
+  width: 100%;
+}
+.title__nav-item{
+  margin:0 15px;
+  font-size: 16px;
+  font-family: "MyriadProBold";
+  font-weight: bold;
+
+  height: 25px;
+  &:last-child{
+    margin-right: 0;
+  }
+  &:first-child{
+    margin-left: 0;
+  }
+  .title__nav-link{
+    text-decoration: none;
+    color:white;
+    &:hover{
+      color:red;
+    }
+
+  }
+  .title__nav-link_active{
+    color:red;
+  }
+}
+.title__total-price{
+  height: 25px;
+  color: #fff;
+  align-self:flex-end;
+  width: 100%;
+  display: flex;
+  //margin-top: 7px;
+  justify-content: flex-end;
+  align-items: center;
+
+}
+.price_numbers{
+  font-family: MyriadProBold;
+  font-size: 22px;
+  display: inline-block;
+  font-weight: bold;
+  text-transform: uppercase;
+
+
+
+}
+
+.svg-rubl{
+  display: inline-block;
+  width: 16px;
+  height: 16px;
+  fill: #ffffff;
+}
+.color__grey{//модификатор цвета надписи и fill
+  color:#505050;
+  fill:#505050;
+}
+.title_tel-basket{
+  margin-top:2px;
+  display: flex;
+  align-content:center;
+  justify-content: flex-end;
+  align-items: center;
+}
+    .tel-basket__svg-call{
+      fill: red;
+      width:39px;
+      height: 39px;
+      .svg_tel_znachok{
+        width:39px;
+        height: 39px;
+
+      }
+    }
+    .tel-basket__telephon{
+      font-size: 40px;
+      color:#ffffff;
+      margin-left: 12px;
+      margin-right: 50px;
+      letter-spacing: 2px;
+      line-height: 0.7;
+      font-family: MyriadProBold;
+    }
+    .tel-basket__svg-basket{
+      .svg-korzina{
+        width: 139px;
+        height: 35px;
+      }
+    }
+ ////меню при наведении мышкой на корзину показывает какие товары добавлены
+.tel-basket__button-basket{
+  position: relative;
+}
+.basket-buy-items{
+  background: #fff;
+  border-radius: 4px;
+  color:#94c579;
+  width: 600px;
+  font-weight: bold;
+  font-size: 1.5rem;
+  position: absolute;
+  top: 40px;
+  right: 0;
+  padding: 15px 15px 30px 15px;
+  z-index: 5;
+  display: flex;
+  flex-direction: column;
+
+  display: none;//убрать по ка меню,чтоб не мешало
+}
+.block-basket_items{
+  border-bottom: 1px solid #a7a7a7;
+  display: flex;
+  align-items: flex-end;
+  justify-content: space-between;
+
+
+  .block-basket_item__name{
+  color:#505050;
+    font-size:1.125rem ;
+  }
+  .block-basket_item__add{
+    margin-left:auto;
+  }
+  .total-price_width20{
+    width:20%;
+  }
+
+}
+//настройка кнопки добавить и уменьшить заказ
+.block-add-items{
+  display: flex;
+  .image-add-znak{
+    margin: 0 4px;
+    width: 20px;
+    height: 20px;
+    font-size: 1.5rem;
+    color:#fff;
+    border-radius: 3px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+    background: #8aba1e; /* Old browsers */
+    background: -moz-linear-gradient(top,  #8aba1e 0%, #0f6e41 100%); /* FF3.6-15 */
+    background: -webkit-linear-gradient(top,  #8aba1e 0%,#0f6e41 100%); /* Chrome10-25,Safari5.1-6 */
+    background: linear-gradient(to bottom,  #8aba1e 0%,#0f6e41 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#8aba1e', endColorstr='#0f6e41',GradientType=0 ); /* IE6-9 */
+    .block-add-items_svg_znak{
+      fill:#fff;
+      width: 14px;
+      height: 14px;
+    }
+  }
+  .image-add-total{
+    height: 20px;
+    font-size: 1rem;
+    color:#505050;
+    display: flex;
+    width: 35px;
+    justify-content: flex-end;
+    align-items: center;
+    border: 1px solid #b9b9b9;
+    padding: 2px 4px 2px 4px;
+    min-width:38px;
+    border-radius: 2px;
+  }
+
+}
+
+
+.header__nav{
+  width: 100%;
+  height: 35px;
+  background: rgba(#fff,0.12);
+  //padding-left: 20px;
+  display: flex;
+  align-items: center;
+  flex: 0 0 auto;
+}
+  .wrapper__header__nav{
+    max-width: 1100px;
+    margin:0 auto;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    padding-right: 35px;
+  }
+  .header__nav-items{
+    color:white;
+    cursor: pointer;
+    font-size: 20px;
+    //display: inline-block;
+    padding: 0 10px;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    font-family: MyriadProBold;
+    font-weight: bold;
+    &:hover{
+      background: rgba(#fff,0.12);
+    }
+  }
+  .header__nav-items_active{
+    border-bottom: 3px solid red;
+  }
+  .header__nav-icon{
+    margin-left:auto;
+    display: flex;
+    align-items: center;
+    fill: rgba(#fff,.6);
+
+  }
+  .nav__svg_instagram:hover{
+    fill: rgba(#fff,.9);
+    cursor: pointer;
+  }
+  .header-nav__svg{
+    height: 20px;
+    width:20px;
+    margin-left: 10px;
+    fill: rgba(#fff,.6);
+  }
+  .nav__svg_vk{
+    height: 30px;
+    width:30px;
+    margin-bottom: 4px;
+    &:hover{
+      fill: rgba(#fff,.9);
+      cursor: pointer;
+    }
+
+  }
+

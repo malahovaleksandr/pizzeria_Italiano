@@ -22,7 +22,7 @@
 					</div>
 					<div class="title__content">
 						<div class="title__nav">
-							<div class="title__nav-item"><a href="" class="title__nav-link">АКЦИИ</a></div>
+							<div class="title__nav-item"><a href="../page/action.html" class="title__nav-link">АКЦИИ</a></div>
 							<div class="title__nav-item"><a href="../page/vacancies.html" class="title__nav-link">ВАКАНСИИ</a></div>
 							<div class="title__nav-item"><a href="" class="title__nav-link">КОНТАКТЫ</a></div>
 							<div class="title__nav-item"><a href="" class="title__nav-link">АТМОСФЕРА</a></div>
@@ -107,18 +107,29 @@
 			</div>
 			<div class="header__nav">
 				<div class="wrapper__header__nav">
-					<!--добавим класс active для меню в котором мы находимся--><a href="#" class="header__nav-items header__nav-items_active">ПИЦЦА</a><a href="page/snacks.html" class="header__nav-items">ЗАКУСКИ</a><a href="page/rols.html" class="header__nav-items">РОЛЛЫ</a><a href="page/pasta.html" class="header__nav-items">ПАСТА</a><a href="page/soups.html" class="header__nav-items">СУПЫ</a><a href="page/salat.html" class="header__nav-items">САЛАТЫ</a><a href="page/sweet.html" class="header__nav-items">ДЕСЕРТЫ</a><a href="page/drinks.html" class="header__nav-items">НАПИТКИ</a><a href="#" class="header__nav-icon"><a href="vk.com">
+					<!--добавим класс active для меню в котором мы находимся--><a href="#" class="header__nav-items header__nav-items_active">ПИЦЦА</a><a href="page/snacks.html" class="header__nav-items">ЗАКУСКИ</a><a href="page/rols.html" class="header__nav-items">РОЛЛЫ</a><a href="page/pasta.html" class="header__nav-items">ПАСТА</a><a href="page/soups.html" class="header__nav-items">СУПЫ</a><a href="page/salat.html" class="header__nav-items">САЛАТЫ</a><a href="page/sweet.html" class="header__nav-items">ДЕСЕРТЫ</a><a href="page/drinks.html" class="header__nav-items">НАПИТКИ</a>
+					<div class="header__nav-icon"><a href="vk.com">
 							<svg class="header-nav__svg nav__svg_vk">
 								<use xlink:href="../image/sprite.svg#icon--kontact"></use>
 							</svg></a><a href="instagram.com">
 							<svg class="header-nav__svg nav__svg_instagram">
 								<use xlink:href="../image/sprite.svg#icon--instagram"></use>
-							</svg></a></a>
+							</svg></a></div>
+				</div>
+				<div class="header__nav_svg-burger">
+					<svg class="header-nav__svg nav__svg_burger">
+						<use xlink:href="../image/sprite.svg#icon--krestik"></use>
+					</svg>
 				</div>
 			</div>
 		</header>
 		<div class="head-relativ"></div>
-		<div class="slider-contant"><img src="image/slider1.png" alt="slider-photo" class="slider-layer slider-layer1"><img src="image/slider2.png" alt="slider-photo" class="slider-layer slider-layer2">
+		<div class="slider-contant">
+			<ul class="slider__ul">
+				<li name="1" class="slider_layer slider-layer1 slider-layer_activ"></li>
+				<li name="2" class="slider_layer slider-layer2"></li>
+				<li name="3" class="slider_layer slider-layer3"></li>
+			</ul>
 			<svg class="slider_arrow-left slider_arrow">
 				<use xlink:href="image/sprite.svg#icon--slider_left"></use>
 			</svg>
@@ -136,9 +147,9 @@
 					<div class="block__item-size">
 						<form name="form-size-pizza" method="post">
 							<input type="radio" value="30" name="add" id="30-cmpizza-margarita" checked="checked">
-							<label for="30-cmpizza-margarita" class="item-size_label">d 30 см</label>
+							<label for="30-cmpizza-margarita" class="item-size_label">30 см</label>
 							<input type="radio" value="40" name="add" id="40-cmpizza-margarita">
-							<label for="40-cmpizza-margarita" class="item-size_label">d 40 см</label>
+							<label for="40-cmpizza-margarita" class="item-size_label">40 см</label>
 						</form>
 					</div>
 					<div class="block__item-buy">
@@ -161,9 +172,9 @@
 					<div class="block__item-size">
 						<form name="form-size-pizza" method="post">
 							<input type="radio" value="30" name="add" id="30-cmpizza-po_derevenski" checked="checked">
-							<label for="30-cmpizza-po_derevenski" class="item-size_label">d 30 см</label>
+							<label for="30-cmpizza-po_derevenski" class="item-size_label">30 см</label>
 							<input type="radio" value="40" name="add" id="40-cmpizza-po_derevenski">
-							<label for="40-cmpizza-po_derevenski" class="item-size_label">d 40 см</label>
+							<label for="40-cmpizza-po_derevenski" class="item-size_label">40 см</label>
 						</form>
 					</div>
 					<div class="block__item-buy">
@@ -186,9 +197,9 @@
 					<div class="block__item-size">
 						<form name="form-size-pizza" method="post">
 							<input type="radio" value="30" name="add" id="30-cmpizza-gavayskaya" checked="checked">
-							<label for="30-cmpizza-gavayskaya" class="item-size_label">d 30 см</label>
+							<label for="30-cmpizza-gavayskaya" class="item-size_label"> 30 см</label>
 							<input type="radio" value="40" name="add" id="40-cmpizza-gavayskaya">
-							<label for="40-cmpizza-gavayskaya" class="item-size_label">d 40 см</label>
+							<label for="40-cmpizza-gavayskaya" class="item-size_label"> 40 см</label>
 						</form>
 					</div>
 					<div class="block__item-buy">
@@ -211,9 +222,9 @@
 					<div class="block__item-size">
 						<form name="form-size-pizza" method="post">
 							<input type="radio" value="30" name="add" id="30-cmpizza-chili" checked="checked">
-							<label for="30-cmpizza-chili" class="item-size_label">d 30 см</label>
+							<label for="30-cmpizza-chili" class="item-size_label"> 30 см</label>
 							<input type="radio" value="40" name="add" id="40-cmpizza-chili">
-							<label for="40-cmpizza-chili" class="item-size_label">d 40 см</label>
+							<label for="40-cmpizza-chili" class="item-size_label"> 40 см</label>
 						</form>
 					</div>
 					<div class="block__item-buy">
@@ -236,9 +247,9 @@
 					<div class="block__item-size">
 						<form name="form-size-pizza" method="post">
 							<input type="radio" value="30" name="add" id="30-cmpizza-vetchina_gribi" checked="checked">
-							<label for="30-cmpizza-vetchina_gribi" class="item-size_label">d 30 см</label>
+							<label for="30-cmpizza-vetchina_gribi" class="item-size_label">30 см</label>
 							<input type="radio" value="40" name="add" id="40-cmpizza-vetchina_gribi">
-							<label for="40-cmpizza-vetchina_gribi" class="item-size_label">d 40 см</label>
+							<label for="40-cmpizza-vetchina_gribi" class="item-size_label">40 см</label>
 						</form>
 					</div>
 					<div class="block__item-buy">
@@ -261,9 +272,9 @@
 					<div class="block__item-size">
 						<form name="form-size-pizza" method="post">
 							<input type="radio" value="30" name="add" id="30-cmpizza-chicken_paprik" checked="checked">
-							<label for="30-cmpizza-chicken_paprik" class="item-size_label">d 30 см</label>
+							<label for="30-cmpizza-chicken_paprik" class="item-size_label">30 см</label>
 							<input type="radio" value="40" name="add" id="40-cmpizza-chicken_paprik">
-							<label for="40-cmpizza-chicken_paprik" class="item-size_label">d 40 см</label>
+							<label for="40-cmpizza-chicken_paprik" class="item-size_label">40 см</label>
 						</form>
 					</div>
 					<div class="block__item-buy">
@@ -286,9 +297,9 @@
 					<div class="block__item-size">
 						<form name="form-size-pizza" method="post">
 							<input type="radio" value="30" name="add" id="30-cmpizza-papperoni" checked="checked">
-							<label for="30-cmpizza-papperoni" class="item-size_label">d 30 см</label>
+							<label for="30-cmpizza-papperoni" class="item-size_label">30 см</label>
 							<input type="radio" value="40" name="add" id="40-cmpizza-papperoni">
-							<label for="40-cmpizza-papperoni" class="item-size_label">d 40 см</label>
+							<label for="40-cmpizza-papperoni" class="item-size_label">40 см</label>
 						</form>
 					</div>
 					<div class="block__item-buy">
@@ -311,9 +322,9 @@
 					<div class="block__item-size">
 						<form name="form-size-pizza" method="post">
 							<input type="radio" value="30" name="add" id="30-cmpizza-barbeku" checked="checked">
-							<label for="30-cmpizza-barbeku" class="item-size_label">d 30 см</label>
+							<label for="30-cmpizza-barbeku" class="item-size_label">30 см</label>
 							<input type="radio" value="40" name="add" id="40-cmpizza-barbeku">
-							<label for="40-cmpizza-barbeku" class="item-size_label">d 40 см</label>
+							<label for="40-cmpizza-barbeku" class="item-size_label">40 см</label>
 						</form>
 					</div>
 					<div class="block__item-buy">
@@ -336,9 +347,9 @@
 					<div class="block__item-size">
 						<form name="form-size-pizza" method="post">
 							<input type="radio" value="30" name="add" id="30-cmpizza-bavarskaya" checked="checked">
-							<label for="30-cmpizza-bavarskaya" class="item-size_label">d 30 см</label>
+							<label for="30-cmpizza-bavarskaya" class="item-size_label"> 30 см</label>
 							<input type="radio" value="40" name="add" id="40-cmpizza-bavarskaya">
-							<label for="40-cmpizza-bavarskaya" class="item-size_label">d 40 см</label>
+							<label for="40-cmpizza-bavarskaya" class="item-size_label"> 40 см</label>
 						</form>
 					</div>
 					<div class="block__item-buy">
@@ -361,9 +372,9 @@
 					<div class="block__item-size">
 						<form name="form-size-pizza" method="post">
 							<input type="radio" value="30" name="add" id="30-cmpizza-sea" checked="checked">
-							<label for="30-cmpizza-sea" class="item-size_label">d 30 см</label>
+							<label for="30-cmpizza-sea" class="item-size_label">30 см</label>
 							<input type="radio" value="40" name="add" id="40-cmpizza-sea">
-							<label for="40-cmpizza-sea" class="item-size_label">d 40 см</label>
+							<label for="40-cmpizza-sea" class="item-size_label">40 см</label>
 						</form>
 					</div>
 					<div class="block__item-buy">
@@ -386,9 +397,9 @@
 					<div class="block__item-size">
 						<form name="form-size-pizza" method="post">
 							<input type="radio" value="30" name="add" id="30-cmpizza-slivochaya" checked="checked">
-							<label for="30-cmpizza-slivochaya" class="item-size_label">d 30 см</label>
+							<label for="30-cmpizza-slivochaya" class="item-size_label">30 см</label>
 							<input type="radio" value="40" name="add" id="40-cmpizza-slivochaya">
-							<label for="40-cmpizza-slivochaya" class="item-size_label">d 40 см</label>
+							<label for="40-cmpizza-slivochaya" class="item-size_label">40 см</label>
 						</form>
 					</div>
 					<div class="block__item-buy">
@@ -411,9 +422,9 @@
 					<div class="block__item-size">
 						<form name="form-size-pizza" method="post">
 							<input type="radio" value="30" name="add" id="30-cmpizza-italiano" checked="checked">
-							<label for="30-cmpizza-italiano" class="item-size_label">d 30 см</label>
+							<label for="30-cmpizza-italiano" class="item-size_label">30 см</label>
 							<input type="radio" value="40" name="add" id="40-cmpizza-italiano">
-							<label for="40-cmpizza-italiano" class="item-size_label">d 40 см</label>
+							<label for="40-cmpizza-italiano" class="item-size_label">40 см</label>
 						</form>
 					</div>
 					<div class="block__item-buy">
@@ -435,6 +446,8 @@
 				<div class="footer-name">ИТАЛЬЯНО PIZZA, 2016</div>
 				<div class="footer-adress">г. Саранск, пр-кт Ленина, д.14</div>
 			</div>
+			<script type="text/javascript" src="/js/jquery.js"></script>
+			<script type="text/javascript" src="/js/main.js"></script>
 		</footer>
 	</body>
 </html>

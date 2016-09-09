@@ -20,7 +20,7 @@
 					</div>
 					<div class="title__content">
 						<div class="title__nav">
-							<div class="title__nav-item"><a href="" class="title__nav-link">АКЦИИ</a></div>
+							<div class="title__nav-item"><a href="action.html" class="title__nav-link">АКЦИИ</a></div>
 							<div class="title__nav-item"><a href="vacancies.html" class="title__nav-link">ВАКАНСИИ</a></div>
 							<div class="title__nav-item"><a href="" class="title__nav-link">КОНТАКТЫ</a></div>
 							<div class="title__nav-item"><a href="" class="title__nav-link">АТМОСФЕРА</a></div>
@@ -106,19 +106,24 @@
 			</div>
 			<div class="header__nav">
 				<div class="wrapper__header__nav">
-					<!--добавим класс active для меню в котором мы находимся--><a href="../index.html" class="header__nav-items">ПИЦЦА</a><a href="snacks.html" class="header__nav-items">ЗАКУСКИ</a><a href="#" class="header__nav-items header__nav-items_active">РОЛЛЫ</a><a href="pasta.html" class="header__nav-items">ПАСТА</a><a href="soups.html" class="header__nav-items">СУПЫ</a><a href="salat.html" class="header__nav-items">САЛАТЫ</a><a href="sweet.html" class="header__nav-items">ДЕСЕРТЫ</a><a href="drinks.html" class="header__nav-items">НАПИТКИ</a><a class="header__nav-icon"><a href="vk.com">
+					<!--добавим класс active для меню в котором мы находимся--><a href="../index.html" class="header__nav-items">ПИЦЦА</a><a href="snacks.html" class="header__nav-items">ЗАКУСКИ</a><a href="#" class="header__nav-items header__nav-items_active">РОЛЛЫ</a><a href="pasta.html" class="header__nav-items">ПАСТА</a><a href="soups.html" class="header__nav-items">СУПЫ</a><a href="salat.html" class="header__nav-items">САЛАТЫ</a><a href="sweet.html" class="header__nav-items">ДЕСЕРТЫ</a><a href="drinks.html" class="header__nav-items">НАПИТКИ</a>
+					<div class="header__nav-icon"><a href="vk.com">
 							<svg class="header-nav__svg nav__svg_vk">
 								<use xlink:href="../image/sprite.svg#icon--kontact"></use>
 							</svg></a><a href="instagram.com">
 							<svg class="header-nav__svg nav__svg_instagram">
 								<use xlink:href="../image/sprite.svg#icon--instagram"></use>
-							</svg></a></a>
+							</svg></a></div>
 				</div>
 			</div>
 		</header>
 		<div class="head-relativ"></div>
-		<div class="slider-contant"><img src="../image/slider1.png" alt="slider-photo" class="slider-layer slider-layer1"><img src="../image/slider2.png" alt="slider-photo" class="slider-layer slider-layer2">
-			<!--img(src="../image/slider3.png" alt="slider-photo").slider-layer.slider-layer3-->
+		<div class="slider-contant">
+			<ul class="slider__ul">
+				<li name="1" class="slider_layer slider-layer1 slider-layer_activ"></li>
+				<li name="2" class="slider_layer slider-layer2"></li>
+				<li name="3" class="slider_layer slider-layer3"></li>
+			</ul>
 			<svg class="slider_arrow-left slider_arrow">
 				<use xlink:href="../image/sprite.svg#icon--slider_left"></use>
 			</svg>
@@ -130,7 +135,7 @@
 			<div class="main-content">
 				<!-- это блок товара в главном блоке с фото товра и описанием-->
 				<div class="main-content__block">
-					<div class="block__item-photo block__item-photo_bRadius"><a href=""><img src="../image/rols/1_small.jpg" alt="roll-1"></a></div>
+					<div class="block__item-photo"><a href=""><img src="../image/rols/1_small.jpg" alt="roll-1"></a></div>
 					<div class="block__item-title">Хака-маки</div>
 					<div class="block__item-description">
 						трубочки с рисом мелко нарезанные, замотаны водорослями, кушать палочками
@@ -149,7 +154,7 @@
 				</div>
 				<!-- это блок товара в главном блоке с фото товра и описанием-->
 				<div class="main-content__block">
-					<div class="block__item-photo block__item-photo_bRadius"><a href=""><img src="../image/rols/2_small.jpg" alt="roll-2"></a></div>
+					<div class="block__item-photo"><a href=""><img src="../image/rols/2_small.jpg" alt="roll-2"></a></div>
 					<div class="block__item-title">Сяки-маки</div>
 					<div class="block__item-description">
 						трубочки с рисом мелко нарезанные, замотаны водорослями, кушать палочками
@@ -171,7 +176,7 @@
 				</div>
 				<!-- это блок товара в главном блоке с фото товра и описанием-->
 				<div class="main-content__block">
-					<div class="block__item-photo block__item-photo_bRadius"><a href=""><img src="../image/rols/3_small.jpg" alt="roll-3"></a></div>
+					<div class="block__item-photo"><a href=""><img src="../image/rols/3_small.jpg" alt="roll-3"></a></div>
 					<div class="block__item-title">Сяки-маки-не-надоедаки</div>
 					<div class="block__item-description">
 						колбаска рисовая, фасованная
@@ -191,7 +196,7 @@
 				</div>
 				<!-- это блок товара в главном блоке с фото товра и описанием-->
 				<div class="main-content__block">
-					<div class="block__item-photo block__item-photo_bRadius"><a href=""><img src="../image/rols/4_small.jpg" alt="roll-4"></a></div>
+					<div class="block__item-photo"><a href=""><img src="../image/rols/4_small.jpg" alt="roll-4"></a></div>
 					<div class="block__item-title">ТУКИ_ШТУКИ</div>
 					<div class="block__item-description">
 						трубочки с рисом мелко нарезанные, замотаны водорослями, кушать палочками
@@ -210,7 +215,7 @@
 				</div>
 				<!-- это блок товара в главном блоке с фото товра и описанием-->
 				<div class="main-content__block">
-					<div class="block__item-photo block__item-photo_bRadius"><a href=""><img src="../image/rols/5_small.jpg" alt="roll-5"></a></div>
+					<div class="block__item-photo"><a href=""><img src="../image/rols/5_small.jpg" alt="roll-5"></a></div>
 					<div class="block__item-title">таки-Баки</div>
 					<div class="block__item-description">
 						Вкуснота, удовольствие, превосходство, великолепие, шарм, богатство вкуса, оромат
@@ -230,7 +235,7 @@
 				</div>
 				<!-- это блок товара в главном блоке с фото товра и описанием-->
 				<div class="main-content__block">
-					<div class="block__item-photo block__item-photo_bRadius"><a href=""><img src="../image/rols/6_small.jpg" alt="roll-6"></a></div>
+					<div class="block__item-photo"><a href=""><img src="../image/rols/6_small.jpg" alt="roll-6"></a></div>
 					<div class="block__item-title">Хака-маки</div>
 					<div class="block__item-description">
 						трубочки с рисом мелко нарезанные, замотаны водорослями, кушать палочками
@@ -539,6 +544,8 @@
 				<div class="footer-name">ИТАЛЬЯНО PIZZA, 2016</div>
 				<div class="footer-adress">г. Саранск, пр-кт Ленина, д.14</div>
 			</div>
+			<script type="text/javascript" src="/js/jquery.js"></script>
+			<script type="text/javascript" src="/js/main.js"></script>
 		</footer>
 	</body>
 </html>

@@ -1,7 +1,11 @@
 .slider-contant
-    img(src="../image/slider1.png" alt="slider-photo").slider-layer.slider-layer1
-    img(src="../image/slider2.png" alt="slider-photo").slider-layer.slider-layer2
-    //img(src="../image/slider3.png" alt="slider-photo").slider-layer.slider-layer3
+    ul.slider__ul
+        li(name="1").slider_layer.slider-layer1.slider-layer_activ
+
+        li(name="2").slider_layer.slider-layer2
+
+        li(name="3").slider_layer.slider-layer3
+
     svg.slider_arrow-left.slider_arrow
         use(xlink:href="../image/sprite.svg#icon--slider_left")
     svg.slider_arrow-right.slider_arrow

@@ -1,0 +1,76 @@
+include add/_mixin
+
+doctype HTML
+html(lang="en")
+    head
+        meta(charset="UTF-8")
+        meta(name="viewport"  content="width=device-width, initial-scale=1.0")
+        meta(name="description" content="pizza")
+        //link(el="shorcut icon" href="../favicon.ico" type="image/x-icon")
+        //link(rel="icon" href="../favicon.ico" type="image/x-icon")
+        block head
+            link(rel="stylesheet" href="../css/main.css")
+    body
+        header.header
+            include ./add/header
+            .header__nav
+                .wrapper__header__nav
+                    //добавим класс active для меню в котором мы находимся
+                    a(href="../index.html").header__nav-items
+                        | ПИЦЦА
+                    a(href="snacks.html").header__nav-items
+                        | ЗАКУСКИ
+                    a(href="rols.html").header__nav-items
+                        | РОЛЛЫ
+                    a(href="pasta.html").header__nav-items
+                        | ПАСТА
+                    a(href="soups.html").header__nav-items
+                        | СУПЫ
+                    a(href="#").header__nav-items.header__nav-items_active
+                        | САЛАТЫ
+                    a(href="sweet.html").header__nav-items
+                        | ДЕСЕРТЫ
+                    a(href="drinks.html").header__nav-items
+                        | НАПИТКИ
+                    a.header__nav-icon
+                        a(href="vk.com")
+                            svg.header-nav__svg.nav__svg_vk
+                                use(xlink:href="../image/sprite.svg#icon--kontact")
+                        a(href="instagram.com")
+                            svg.header-nav__svg.nav__svg_instagram
+                                use(xlink:href="../image/sprite.svg#icon--instagram" )
+        .head-relativ
+        include ./add/slider
+
+        .wraper-main
+            .main-content
+                include ./add/rols/roll-1
+                include ./add/rols/roll-2
+                include ./add/rols/roll-3
+                include ./add/rols/roll-4
+                include ./add/rols/roll-5
+                include ./add/rols/roll-6
+                include ./add/rols/roll-7
+                include ./add/rols/roll-8
+                include ./add/rols/roll-9
+                include ./add/rols/roll-10
+                include ./add/rols/roll-11
+                include ./add/rols/roll-12 
+                include ./add/rols/roll-13
+                include ./add/rols/roll-14
+                include ./add/rols/roll-15
+                include ./add/rols/roll-16
+                include ./add/rols/roll-17
+                include ./add/rols/roll-18
+                include ./add/rols/roll-19
+                include ./add/rols/roll-20
+                include ./add/rols/roll-21
+
+
+
+        footer.footer
+            include ./add/footer
+
+
+
+

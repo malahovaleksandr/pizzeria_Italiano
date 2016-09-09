@@ -1,7 +1,18 @@
 .head-relativ{//добавляем этот див на высоту хедера когда он у нас в положении фиксид, чтоб не нализал на другой контент
-  height:1px;
-  margin-bottom: 239px;
+
   width: 100%;
+  @include breakpoint(desctop)  {
+    height:1px;
+    margin-bottom: 179px;
+  }
+  @include breakpoint(tablet)  {
+    height:1px;
+    margin-bottom: 149px;
+  }
+  @include breakpoint(phone)  {
+    height:1px;
+    margin-bottom: 219px;
+  }
 }
 .header{
   width: 100%;
@@ -10,72 +21,147 @@
   background-repeat: no-repeat;
   display: flex;
   flex-direction: column;
-  height:240px;
-
   position: fixed;
   z-index: 5;
+
+  @include breakpoint(desctop)  {
+    height:180px;
+  }
+  @include breakpoint(tablet)  {
+    height:150px;
+  }
+  @include breakpoint(phone)  {
+    height:220px;
+  }
 }
 .header-title{
   display: flex;
   width: 100%;
   flex: 1 0 auto;
-  height: 200px;
+
   //overflow: hidden;
+  @include breakpoint(desctop)  {
+    height: 145px;
+  }
+  @include breakpoint(tablet)  {
+    height: 115px;
+  }
+  @include breakpoint(phone)  {
+    height: 185px;
+  }
 }
 .header-title__wrapper{
-  padding: 0 10px;
-  max-width: 1200px;
+  max-width: 1100px;
   margin:0 auto;
   width: 100%;
   height: 100%;
   display: flex;
-
+  @include breakpoint(desctop)  {
+    flex-direction: row;
+    padding: 0 10px;
+  }
+  @include breakpoint(tablet)  {
+    flex-direction: row;
+    padding: 0 8px;
+  }
+  @include breakpoint(phone)  {
+    flex-direction: column;
+    padding: 0 5px;
+  }
 }
 .title__logo{
-  margin-top: 70px;
-  width: 50%;
-  max-width: 50%;
+  margin-top: 30px;
 
-//настройки если лого свг
-  //display: flex;
-  //flex-direction: column;
-  .logo__image{
-    width: 70%;
-    //height: 100%;
+  @include breakpoint(desctop)  {
+    margin-top: 30px;
+    width: 45%;
+    max-width: 50%;
   }
-  //настройка лого если свг
-  //.svg-logo-italiano{
-  //  width: 405px;
-  //  height: 45px;
-  //  fill:#07ca09;
-  //}
-  //.svg-logo-pizza{
-  //  margin-top:20px;
-  //  width: 190px;
-  //  height: 35px;
-  //  fill:#e30613;
-  //}
+  @include breakpoint(tablet)  {
+    margin-top: 15px;
+    width: 45%;
+    max-width: 50%;
+  }
+  @include breakpoint(phone)  {
+    margin-top: 10px;
+    width: 100%;
+  }
+
+  .logo__image{
+    min-width: 200px;
+    @include breakpoint(desctop)  {
+      width: 70%;
+    }
+    @include breakpoint(tablet)  {
+      width: 70%;
+    }
+    @include breakpoint(phone)  {
+      max-width: 300px;
+      width: 90%;
+    }
+  }
+
 }
 .title__content{
-  margin-top: 70px;
-  margin-left: auto;
-  width:50%;
-  padding-right:25px;
   display: flex;
   flex-direction: column;
+
+  @include breakpoint(desctop)  {
+    margin-top: 30px;
+    margin-left: auto;
+    width:50%;
+    max-width: 50%;
+  }
+  @include breakpoint(tablet)  {
+    margin-top: 15px;
+    margin-left: auto;
+    width:50%;
+    max-width: 50%;
+  }
+  @include breakpoint(phone)  {
+    margin-top: 10px;
+    width: 100%;
+  }
 }
 .title__nav{
   display: flex;
-  justify-content: flex-end;
   width: 100%;
+
+  @include breakpoint(desctop)  {
+    justify-content: flex-end;
+  }
+  @include breakpoint(tablet)  {
+    justify-content: flex-end;
+  }
+  @include breakpoint(phone)  {
+    justify-content: flex-start;
+  }
+
 }
 .title__nav-item{
-  margin:0 15px;
-  font-size: 18px;
+
+
   font-family: "MyriadProBold";
   font-weight: bold;
-
   height: 25px;
+
+  @include breakpoint(desctop)  {
+    margin:0 15px;
+    font-size: 16px;
+  }
+  @include breakpoint(tablet)  {
+    margin:0 8px;
+    font-size: 16px;
+  }
+  @include breakpoint(phone)  {
+    margin:0 10px;
+    font-size: 14px;
+  }
+  @include breakpoint(phoneSmall)  {
+    margin:0 4px;
+    font-size: 14px;
+  }
+
   &:last-child{
     margin-right: 0;
   }
@@ -100,14 +186,13 @@
   align-self:flex-end;
   width: 100%;
   display: flex;
-  margin-top: 7px;
   justify-content: flex-end;
   align-items: center;
 
 }
 .price_numbers{
   font-family: MyriadProBold;
-  font-size: 1.56rem;
+  font-size: 22px;
   display: inline-block;
   font-weight: bold;
   text-transform: uppercase;
@@ -118,8 +203,8 @@
 
 .svg-rubl{
   display: inline-block;
-  width: 19px;
-  height: 19px;
+  width: 16px;
+  height: 16px;
   fill: #ffffff;
 }
 .color__grey{//модификатор цвета надписи и fill
@@ -135,16 +220,38 @@
 }
     .tel-basket__svg-call{
       fill: red;
-      width:39px;
-      height: 39px;
-      .svg_tel_znachok{
+
+      @include breakpoint(desctop)  {
         width:39px;
         height: 39px;
+      }
+      @include breakpoint(tablet)  {
+        width:28px;
+        height: 28px;
+      }
+      @include breakpoint(phone)  {
+        width:22px;
+        height: 22px;
+      }
+      .svg_tel_znachok{
+        width:100%;
+        height: 100%;
 
       }
     }
     .tel-basket__telephon{
-      font-size: 3.125rem;
+      font-size: 40px;
+
+      @include breakpoint(desctop)  {
+        font-size: 40px;
+      }
+      @include breakpoint(tablet)  {
+        font-size: 29px;
+      }
+      @include breakpoint(phone)  {
+        font-size: 22px;
+      }
+
       color:#ffffff;
       margin-left: 12px;
       margin-right: 50px;
@@ -235,40 +342,80 @@
     padding: 2px 4px 2px 4px;
     min-width:38px;
     border-radius: 2px;
+
   }
 
 }
 
 
 .header__nav{
-  width: 100%;
-  height: 40px;
-  background: rgba(#fff,0.12);
+
+
   //padding-left: 20px;
   display: flex;
   align-items: center;
   flex: 0 0 auto;
+  position: relative;
+
+  @include breakpoint(desctop)  {
+    height: 35px;
+    width: 100%;
+    background: rgba(#fff,0.12);
+  }
+  @include breakpoint(tablet)  {
+    height: 35px;
+    width: 100%;
+    background: rgba(#fff,0.12);
+  }
+  @include breakpoint(phone)  {
+    height: 340px;
+    justify-content: flex-end;
+    width: 100%;
+  }
 }
   .wrapper__header__nav{
-    max-width: 1200px;
+    max-width: 1100px;
     margin:0 auto;
-    width: 100%;
+
     height: 100%;
     display: flex;
     align-items: center;
-    padding-right: 35px;
+    padding-right: 10px;
+    @include breakpoint(desctop)  {
+      position: relative;
+      width: 100%;
+    }
+    @include breakpoint(tablet)  {
+      position: relative;
+      width: 100%;
+    }
+    @include breakpoint(phone)  {
+      position: absolute;
+      flex-direction: column;
+      background: rgba(#000,0.7);
+
+    }
   }
   .header__nav-items{
     color:white;
     cursor: pointer;
-    font-size: 20px;
-    //display: inline-block;
     padding: 0 10px;
     height: 100%;
     display: flex;
     align-items: center;
     font-family: MyriadProBold;
     font-weight: bold;
+
+    @include breakpoint(desctop){
+      font-size: 20px;
+    }
+    @include breakpoint(tablet)  {
+      font-size: 16px;
+    }
+    @include breakpoint(phone)  {
+      font-size: 20px;
+      padding: 20px 60px;
+    }
     &:hover{
       background: rgba(#fff,0.12);
     }
@@ -281,21 +428,23 @@
     display: flex;
     align-items: center;
     fill: rgba(#fff,.6);
-
+    @include breakpoint(phone)  {
+      display: none;
+    }
   }
   .nav__svg_instagram:hover{
     fill: rgba(#fff,.9);
     cursor: pointer;
   }
   .header-nav__svg{
-    height: 22px;
-    width:22px;
+    height: 20px;
+    width:20px;
     margin-left: 10px;
     fill: rgba(#fff,.6);
   }
   .nav__svg_vk{
-    height: 35px;
-    width:35px;
+    height: 30px;
+    width:30px;
     margin-bottom: 4px;
     &:hover{
       fill: rgba(#fff,.9);
@@ -303,4 +452,23 @@
     }
 
   }
+.header__nav_svg-burger{
+  position: absolute;
+  right: 0;
+  top: 0;
+  cursor: pointer;
+  display: none;
+
+  @include breakpoint(phone)  {
+    display: inline-block;
+  }
+  &:hover .nav__svg_burger{
+    fill: rgba(#fff,.9);
+  }
+  .nav__svg_burger{
+    height: 30px;
+    width:30px;
+
+  }
+}
 

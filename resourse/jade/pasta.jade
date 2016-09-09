@@ -33,14 +33,16 @@ html(lang="en")
                         | ДЕСЕРТЫ
                     a(href="drinks.html").header__nav-items
                         | НАПИТКИ
-                    a(href="#").header__nav-icon
+                    .header__nav-icon
                         a(href="vk.com")
                             svg.header-nav__svg.nav__svg_vk
                                 use(xlink:href="../image/sprite.svg#icon--kontact")
                         a(href="instagram.com")
                             svg.header-nav__svg.nav__svg_instagram
                                 use(xlink:href="../image/sprite.svg#icon--instagram" )
-
+                .header__nav_svg-burger
+                    svg.header-nav__svg.nav__svg_burger
+                        use(xlink:href="../image/sprite.svg#icon--krestik" )
         .head-relativ
         include ./add/slider
 

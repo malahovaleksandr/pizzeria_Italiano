@@ -1,0 +1,56 @@
+.content-action{
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  //padding:40px;
+}
+.content-action__item {
+  width: 47%;
+  margin: 40px 0;
+
+  font-size: 17px;
+  line-height: 1.7;
+  text-transform: uppercase;
+  color:white;
+  font-family: "MyriadProSemiBold";
+  display:flex;
+  flex-direction: column;
+  img{
+    width: 100%;
+  }
+}
+.content-action__text{
+  cursor: pointer;
+  color: #fff;
+  &:hover{
+    color:#41e1f9;
+  }
+}
+.content-action__descripion{
+  font-family: "MyriadProRegular";
+  font-size: 16px;
+  line-height: 1.2;
+  word-spacing: 2px;
+  letter-spacing: 1px;
+}
+.content-action__item_once {//настройки для блока когда акция одна на странице
+  width: 100%;
+  margin: 40px 0;
+  font-size: 28px;
+  line-height: 1.7;
+  text-transform: uppercase;
+  color:white;
+  font-family: "MyriadProSemiBold";
+  display:flex;
+  flex-direction: column;
+  img{
+    width: 100%;
+  }
+  .content-action__back-link{
+    margin-top: 20px;
+    font-size: 12px;
+    color:#b8f1fa;
+  }
+}

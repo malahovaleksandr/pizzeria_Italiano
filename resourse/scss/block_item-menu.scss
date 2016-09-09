@@ -1,33 +1,54 @@
 .main-content__block{
   box-sizing:   border-box;
- // border: 1px solid red;
-  min-height: 520px;
-  width: 33.3%;
-  padding:75px 35px 0 20px;
+  min-height: 350px;
+  padding:10px;
   display: flex;
   flex-direction: column;
   justify-content: flex-start;
-
-  //align-items: center;
   color:white;
+  border-radius: 10px;
+  background: rgba(#fff,0.05);
 
+  @include breakpoint(desctop){
+    width: 24%;
+    margin:35px 44px 0 44px;
+  }
+  @include breakpoint(tablet)  {
+    width: 45%;
+    max-width: 310px;
+    margin:35px 20px 0 20px;
+  }
+  @include breakpoint(phone)  {
+    width: 90%;
+    max-width: 300px;
+    margin:10px;
+  }
+
+  &:hover{
+    background: rgba(#fff,0.1);
+  }
 }
 .block__item-photo{
-  //height: 250px;
-  width: 325px;
 
+  margin-bottom: 9px;
+
+  @include breakpoint(desctop){
+    max-width: 245px;
+  }
+  @include breakpoint(tablet)  {
+    max-width: 310px;
+  }
+  @include breakpoint(phone)  {
+    max-width: 300px;
+  }
   img{
     width: 100%;
     height: 100%;
   }
 }
-//как вариант оформления , на пробу делаю
-.block__item-photo_bRadius{
-  border-radius: 25px;
-  overflow: hidden;
-}
+
 .block__item-title{
-  font-size: 28px;
+  font-size: 21px;
   align-self: flex-start;
   margin-top: 10px;
   font-family: MyriadProBold;
@@ -36,14 +57,22 @@
 }
 .block__item-description{
   margin-top: 2px;
-  width: 325px;
+  max-width: 245px;
 
   text-align: justify;
-  font-size: 17px;
+  font-size: 14px;
   font-family: "MyriadProRegular";
+
+  @include breakpoint(tablet)  {
+    max-width: 310px;
+  }
+  @include breakpoint(phone)  {
+    max-width: 300px;
+  }
 }
 .block__item-size{
   margin-top: auto;
+  padding-top:10px;
   align-self: flex-start;
   .item-size_label{
     margin-left:3px;
@@ -67,6 +96,7 @@
 //опускает вниз цену и кнопку корзины там где нет выбора размера
 .block__item-buy_mtauto{
   margin-top:auto;
+  padding-top: 10px;
 }
 .block__item-buy_justify{
   justify-content: space-between;
@@ -81,13 +111,12 @@
 
 //настройка вида кнопки
 .basket-block{
-  padding:8px 10px 10px 10px;
-  margin-right:15px;
-  height: 36px;
+
+  height: 31px;
   border-radius: 7px;
   color:white;
   font-family: MyriadProBold;
-  font-size:1.05rem ;
+
   display: flex;
   justify-content: center;
   align-items:center;
@@ -98,14 +127,48 @@
   background: -webkit-linear-gradient(top,  #8aba1e 0%,#0f6e41 100%); /* Chrome10-25,Safari5.1-6 */
   background: linear-gradient(to bottom,  #8aba1e 0%,#0f6e41 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
   filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#8aba1e', endColorstr='#0f6e41',GradientType=0 ); /* IE6-9 */
+
+  @include breakpoint(desctop)  {
+    padding:6px 8px 8px 8px;
+    font-size:16px ;
+  }
+  @include breakpoint(tablet)  {
+    padding:4px 6px 6px 6px;
+    font-size:16px ;
+  }
+  @include breakpoint(phone)  {
+    padding:4px;
+    font-size:14px ;
+  }
   .svg_znac_korzina{
     fill:#fff;
-    width: 20px;
-    margin-right: 10px;
+
+
+    @include breakpoint(desctop)  {
+      width: 20px;
+      margin-right: 10px;
+    }
+    @include breakpoint(tablet)  {
+      width: 18px;
+      margin-right: 10px;
+    }
+    @include breakpoint(phone)  {
+      width: 18px;
+      margin-right: 10px;
+    }
   }
 }
 .button-basket-modify{
   margin-left:auto;
-  width:140px ;
   margin-right: 0;
+
+  @include breakpoint(desctop)  {
+    width:140px ;
+  }
+  @include breakpoint(tablet)  {
+    width:120px ;
+  }
+  @include breakpoint(phone)  {
+    width:110px ;
+  }
 }

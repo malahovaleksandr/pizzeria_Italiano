@@ -1,0 +1,73 @@
+
+include add/_mixin
+
+doctype HTML
+html(lang="en")
+    head
+        meta(charset="UTF-8")
+        meta(name="viewport"  content="width=device-width, initial-scale=1.0")
+        meta(name="description" content="pizza")
+
+        //link(el="shorcut icon" href="../favicon.ico" type="image/x-icon")
+        //link(rel="icon" href="../favicon.ico" type="image/x-icon")
+
+
+        block head
+            link(rel="stylesheet" href="css/main.css")
+
+    body
+        //
+        header.header
+            include ./add/headerIndex
+            .header__nav
+                .wrapper__header__nav
+                    //добавим класс active для меню в котором мы находимся
+                    a(href="#").header__nav-items.header__nav-items_active
+                        | ПИЦЦА
+                    a(href="page/snacks.html").header__nav-items
+                        | ЗАКУСКИ
+                    a(href="page/rols.html").header__nav-items
+                        | РОЛЛЫ
+                    a(href="page/pasta.html").header__nav-items
+                        | ПАСТА
+                    a(href="page/soups.html").header__nav-items
+                        | СУПЫ
+                    a(href="page/salat.html").header__nav-items
+                        | САЛАТЫ
+                    a(href="page/sweet.html").header__nav-items
+                        | ДЕСЕРТЫ
+                    a(href="page/drinks.html").header__nav-items
+                        | НАПИТКИ
+                    a(href="#").header__nav-icon
+                        a(href="vk.com")
+                            svg.header-nav__svg.nav__svg_vk
+                                use(xlink:href="../image/sprite.svg#icon--kontact")
+                        a(href="instagram.com")
+                            svg.header-nav__svg.nav__svg_instagram
+                                use(xlink:href="../image/sprite.svg#icon--instagram" )
+        .head-relativ
+        include ./add/sliderIndex
+
+        .wraper-main
+            .main-content
+                include ./add/pizza/pizza-margarita
+                include ./add/pizza/pizza-po_derevenski
+                include ./add/pizza/pizza-gavayskay
+                include ./add/pizza/pizza-chili
+                include ./add/pizza/pizza-vetchina_gribi
+                include ./add/pizza/pizza-chiken_paprik
+                include ./add/pizza/pizza-papperoni
+                include ./add/pizza/pizza-barbeku
+                include ./add/pizza/pizza-bavarskaya
+                include ./add/pizza/pizza-sea
+                include ./add/pizza/pizza-slivki
+                include ./add/pizza/pizza-italiano
+
+
+
+        footer.footer
+             include ./add/footer
+
+
+
+

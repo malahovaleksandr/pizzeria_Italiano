@@ -14,4 +14,41 @@ $rep:green;
 @mixin adaptive($minWidth,$maxWidth){
   @media screen and (min-width: $minWidth) and (max-width:$maxWidth){}
 };
+$width1600:1600px;
+$width1024: 1024px;
+$width768: 768px;
+$width480: 480px;
 
+@mixin breakpoint($media) {
+  @if $media == pointBig {
+    @media only screen and (min-width: $width1600) { @content; }
+  }
+  @else if $media == pointMedium {
+    @media only screen and (min-width: $width1024 + 1 ) and (max-width: $width1600 - 1) { @content; }
+  }
+  @if $media == desctop {
+    @media only screen and (min-width: $width1024 + 1) { @content; }
+  }
+  @else if $media == tablet {
+    @media only screen and (min-width: $width768) and (max-width: $width1024 ) { @content; }
+  }
+  @else if $media == phone {
+    @media only screen  and (max-width: $width768 - 1 ) { @content; }
+  }
+  @else if $media == phoneSmall {
+    @media only screen  and (max-width: $width480 - 1 ) { @content; }
+  }
+}
+//exemple
+@include breakpoint(desctop)  {
+  width:39px;
+  height: 39px;
+}
+@include breakpoint(tablet)  {
+  width:28px;
+  height: 28px;
+}
+@include breakpoint(phone)  {
+  width:22px;
+  height: 22px;
+}

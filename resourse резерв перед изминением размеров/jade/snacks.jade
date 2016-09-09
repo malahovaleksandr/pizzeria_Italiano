@@ -1,0 +1,65 @@
+
+include add/_mixin
+
+doctype HTML
+html(lang="en")
+    head
+        meta(charset="UTF-8")
+        meta(name="viewport"  content="width=device-width, initial-scale=1.0")
+        meta(name="description" content="pizza")
+
+        //link(el="shorcut icon" href="../favicon.ico" type="image/x-icon")
+        //link(rel="icon" href="../favicon.ico" type="image/x-icon")
+
+        link(rel="stylesheet" href="../css/main.css")
+        block head
+
+    body
+        header.header
+            include ./add/header
+            .header__nav
+                .wrapper__header__nav
+                    //добавим класс active для меню в котором мы находимся
+                    a(href="../index.html").header__nav-items
+                        | ПИЦЦА
+                    a(href="#").header__nav-items.header__nav-items_active
+                        | ЗАКУСКИ
+                    a(href="rols.html").header__nav-items
+                        | РОЛЛЫ
+                    a(href="pasta.html").header__nav-items
+                        | ПАСТА
+                    a(href="soups.html").header__nav-items
+                        | СУПЫ
+                    a(href="salat.html").header__nav-items
+                        | САЛАТЫ
+                    a(href="sweet.html").header__nav-items
+                        | ДЕСЕРТЫ
+                    a(href="drinks.html").header__nav-items
+                        | НАПИТКИ
+                    a.header__nav-icon
+                        a(href="vk.com")
+                            svg.header-nav__svg.nav__svg_vk
+                                use(xlink:href="../image/sprite.svg#icon--kontact")
+                        a(href="instagram.com")
+                            svg.header-nav__svg.nav__svg_instagram
+                                use(xlink:href="../image/sprite.svg#icon--instagram" )
+        .head-relativ
+        include ./add/slider
+
+        .wraper-main
+            .main-content
+                include ./add/snacks/snack-sandwich-chicken
+                include ./add/snacks/snack-sandwich-tune
+                include ./add/snacks/snack-wings
+                include ./add/snacks/snack-nagets
+                include ./add/snacks/snack-toast
+                include ./add/snacks/snack-potato_free
+
+
+
+        footer.footer
+            include ./add/footer
+
+
+
+
