@@ -5,6 +5,12 @@
   padding:65px 40px 45px 80px;
   display: flex;
   flex-direction: column;
+  @include breakpoint(tablet)  {
+    padding:30px 20px 25px 20px;
+  }
+  @include breakpoint(phone)  {
+    padding:20px 10px 15px 10px;
+  }
 }
 .vacancies{
   display: flex;
@@ -18,9 +24,16 @@
     margin-bottom: 5px;
   }
   .vacancies_description{
-    font-size: 17px;
+
+    font-size: 18px;
     margin-bottom: 20px;
     text-align: justify;
     font-family: "MyriadProRegular";
+    @include breakpoint(tablet)  {
+      font-size: 20px;
+    }
+    @include breakpoint(phone)  {
+      font-size: 18px;
+    }
   }
 }

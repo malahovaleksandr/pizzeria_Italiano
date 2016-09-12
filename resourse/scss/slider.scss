@@ -3,6 +3,15 @@
   height: 290px;
   position: relative;
   overflow: hidden;
+  @include breakpoint(desctop)  {
+
+  }
+  @include breakpoint(tablet)  {
+    height: 250px;
+  }
+  @include breakpoint(phone)  {
+    height: 200px;
+  }
 
 }
 
@@ -47,9 +56,25 @@
   }
 }
 .slider_arrow-left{
-  left:145px;
+  @include breakpoint(desctop)  {
+    left:145px;
+  }
+  @include breakpoint(tablet)  {
+    left:80px;
+  }
+  @include breakpoint(phone)  {
+    left:40px;
+  }
 }
 .slider_arrow-right{
-  right:145px;
 
+  @include breakpoint(desctop)  {
+    right:145px;
+  }
+  @include breakpoint(tablet)  {
+    right:80px;
+  }
+  @include breakpoint(phone)  {
+    right:10px;
+  }
 }

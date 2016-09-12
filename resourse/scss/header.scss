@@ -11,7 +11,7 @@
   }
   @include breakpoint(phone)  {
     height:1px;
-    margin-bottom: 219px;
+    margin-bottom: 69px;
   }
 }
 .header{
@@ -23,7 +23,7 @@
   flex-direction: column;
   position: fixed;
   z-index: 5;
-
+  //position: relative;
   @include breakpoint(desctop)  {
     height:180px;
   }
@@ -31,7 +31,7 @@
     height:150px;
   }
   @include breakpoint(phone)  {
-    height:220px;
+    height:70px;
   }
 }
 .header-title{
@@ -39,7 +39,6 @@
   width: 100%;
   flex: 1 0 auto;
 
-  //overflow: hidden;
   @include breakpoint(desctop)  {
     height: 145px;
   }
@@ -47,7 +46,7 @@
     height: 115px;
   }
   @include breakpoint(phone)  {
-    height: 185px;
+    height: 70px;
   }
 }
 .header-title__wrapper{
@@ -96,8 +95,8 @@
       width: 70%;
     }
     @include breakpoint(phone)  {
-      max-width: 300px;
-      width: 90%;
+      width: 210px;
+
     }
   }
 
@@ -119,8 +118,7 @@
     max-width: 50%;
   }
   @include breakpoint(phone)  {
-    margin-top: 10px;
-    width: 100%;
+   display: none;
   }
 }
 .title__nav{
@@ -268,6 +266,9 @@
  ////меню при наведении мышкой на корзину показывает какие товары добавлены
 .tel-basket__button-basket{
   position: relative;
+  &:hover .basket-buy-items{
+    display: flex;
+  }
 }
 .basket-buy-items{
   background: #fff;
@@ -283,8 +284,15 @@
   z-index: 5;
   display: flex;
   flex-direction: column;
+  display: none;
 
-  display: none;//убрать по ка меню,чтоб не мешало
+}
+.block-basket__hight-for-hover{
+  position: absolute;
+
+  height: 20px;
+  width: 100%;
+  top:-15px
 }
 .block-basket_items{
   border-bottom: 1px solid #a7a7a7;
@@ -349,8 +357,6 @@
 
 
 .header__nav{
-
-
   //padding-left: 20px;
   display: flex;
   align-items: center;
@@ -368,15 +374,12 @@
     background: rgba(#fff,0.12);
   }
   @include breakpoint(phone)  {
-    height: 340px;
-    justify-content: flex-end;
-    width: 100%;
+   display: none;
   }
 }
   .wrapper__header__nav{
     max-width: 1100px;
     margin:0 auto;
-
     height: 100%;
     display: flex;
     align-items: center;
@@ -390,12 +393,25 @@
       width: 100%;
     }
     @include breakpoint(phone)  {
-      position: absolute;
+      //position: absolute;
       flex-direction: column;
       background: rgba(#000,0.7);
+      width: 250px;
       right: -100%;
     }
   }
+.menu-item-for-telephone{
+    display: none;
+  z-index: 10;
+  height: 70px;
+  align-self: flex-end;
+  margin: 0;
+  border:1px solid green;
+  @include breakpoint(phone)  {
+    display: flex;
+    background: #771417;
+  }
+}
   .header__nav-items{
     color:white;
     cursor: pointer;
@@ -453,9 +469,10 @@
 
   }
 .header__nav_svg-burger{
-  position: absolute;
-  right: 0;
-  top: 0;
+  position: fixed;
+z-index: 6;
+  right: 25px;
+  top: 25px;
   cursor: pointer;
   display: none;
 
@@ -472,3 +489,53 @@
   }
 }
 
+.header__nav_svg-burger_close{
+  .nav__svg_burger_close{
+    position: absolute;
+    right: 215px;//значение равно ширине контейнера меню минус половинаширины свг
+    top: 25px;
+    cursor: pointer;
+    display: none;
+    height: 30px;
+    width:30px;
+    @include breakpoint(phone)  {
+      display: inline-block;
+    }
+  }
+}
+
+
+//пробное меню для телефона
+.menu-tel{
+  position: fixed;
+  right: -100%;
+  top: 0;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  background: #771417;
+  z-index: 7;
+  width: 230px;
+
+  padding-bottom: 15px;
+}
+.menu-tel__items{
+  padding-top: 15px;
+  padding-left: 35px;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  width: 100%;
+  border-bottom: 1px solid #6c1011;
+}
+.header__menu-telephone-item{
+  color:white;
+  font-size: 16px;
+  cursor: pointer;
+  padding: 10px 10px;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  font-family: MyriadProBold;
+  //font-weight: bold;
+}

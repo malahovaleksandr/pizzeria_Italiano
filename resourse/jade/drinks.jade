@@ -11,6 +11,42 @@ html(lang="en")
         block head
             link(rel="stylesheet" href="../css/main.css")
     body
+        // Меню которое появиться на телефоне
+        .menu-tel
+            .menu-tel__items
+                //добавим класс active для меню в котором мы находимся
+                a(href="../index.html").header__menu-telephone-item
+                    | ПИЦЦА
+                a(href="snacks.html").header__menu-telephone-item
+                    | ЗАКУСКИ
+                a(href="rols.html").header__menu-telephone-item
+                    | РОЛЛЫ
+                a(href="pasta.html").header__menu-telephone-item
+                    | ПАСТА
+                a(href="soups.html").header__menu-telephone-item
+                    | СУПЫ
+                a(href="salat.html").header__menu-telephone-item
+                    | САЛАТЫ
+                a(href="sweet.html").header__menu-telephone-item
+                    | ДЕСЕРТЫ
+                a(href="drinks.html").header__menu-telephone-item.header__nav-items_active
+                    | НАПИТКИ
+            .menu-tel__items
+                a(href="action.html").header__menu-telephone-item
+                    | АКЦИИ
+                a(href="vacancies.html").header__menu-telephone-item
+                    | ВАКАНСИИ
+                a(href="contacts.html").header__menu-telephone-item
+                    | КОНТАКТЫ
+
+            .header__nav_svg-burger_close
+                svg.header-nav__svg.nav__svg_burger_close
+                    use(xlink:href="../image/sprite.svg#icon--krestik" )
+        .header__nav_svg-burger
+            svg.header-nav__svg.nav__svg_burger
+                use(xlink:href="../image/sprite.svg#icon--hamburger")
+            // конец меню которое появляется при ширине экрана как телефон
+
         header.header
             include ./add/header
             .header__nav
@@ -39,6 +75,9 @@ html(lang="en")
                         a(href="instagram.com")
                             svg.header-nav__svg.nav__svg_instagram
                                 use(xlink:href="../image/sprite.svg#icon--instagram" )
+                .header__nav_svg-burger
+                    svg.header-nav__svg.nav__svg_burger
+            use(xlink:href="../image/sprite.svg#icon--krestik" )
         .head-relativ
         include ./add/slider
 

@@ -4,7 +4,13 @@
   display: flex;
   flex-wrap: wrap;
   justify-content: space-between;
-  //padding:40px;
+
+  @include breakpoint(tablet)  {
+    justify-content: center;
+  }
+  @include breakpoint(phone)  {
+    justify-content: center;
+  }
 }
 .content-action__item {
   width: 47%;
@@ -17,6 +23,18 @@
   font-family: "MyriadProSemiBold";
   display:flex;
   flex-direction: column;
+
+  @include breakpoint(tablet)  {
+    width: 90%;
+    margin: 30px 0;
+    font-size: 16px;
+  }
+  @include breakpoint(phone)  {
+    width: 90%;
+    margin: 20px 0;
+    font-size: 14px;
+  }
+
   img{
     width: 100%;
   }
@@ -24,6 +42,13 @@
 .content-action__text{
   cursor: pointer;
   color: #fff;
+
+  @include breakpoint(tablet)  {
+    font-size: 24px;
+  }
+  @include breakpoint(phone)  {
+    font-size: 20px;
+  }
   &:hover{
     color:#41e1f9;
   }
@@ -34,6 +59,12 @@
   line-height: 1.2;
   word-spacing: 2px;
   letter-spacing: 1px;
+  @include breakpoint(tablet)  {
+    font-size: 16px;
+  }
+  @include breakpoint(phone)  {
+    font-size: 14px;
+  }
 }
 .content-action__item_once {//настройки для блока когда акция одна на странице
   width: 100%;
@@ -45,6 +76,15 @@
   font-family: "MyriadProSemiBold";
   display:flex;
   flex-direction: column;
+
+  @include breakpoint(tablet)  {
+    font-size: 24px;
+    padding:0 20px;
+  }
+  @include breakpoint(phone)  {
+    font-size: 20px;
+    padding:0 10px;
+  }
   img{
     width: 100%;
   }

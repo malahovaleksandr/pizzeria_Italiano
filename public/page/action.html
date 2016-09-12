@@ -9,6 +9,25 @@
 		<link rel="stylesheet" href="../css/main.css">
 	</head>
 	<body>
+		<!-- Меню которое появиться на телефоне-->
+		<div class="menu-tel">
+			<div class="menu-tel__items">
+				<!--добавим класс active для меню в котором мы находимся--><a href="../index.html" class="header__menu-telephone-item">ПИЦЦА</a><a href="snacks.html" class="header__menu-telephone-item">ЗАКУСКИ</a><a href="rols.html" class="header__menu-telephone-item">РОЛЛЫ</a><a href="pasta.html" class="header__menu-telephone-item">ПАСТА</a><a href="soups.html" class="header__menu-telephone-item">СУПЫ</a><a href="salat.html" class="header__menu-telephone-item">САЛАТЫ</a><a href="sweet.html" class="header__menu-telephone-item">ДЕСЕРТЫ</a><a href="drinks.html" class="header__menu-telephone-item">НАПИТКИ</a>
+			</div>
+			<div class="menu-tel__items"><a href="action.html" class="header__menu-telephone-item header__nav-items_active">АКЦИИ</a><a href="vacancies.html" class="header__menu-telephone-item">ВАКАНСИИ</a><a href="contacts.html" class="header__menu-telephone-item">КОНТАКТЫ</a></div>
+			<div class="header__nav_svg-burger_close">
+				<svg class="header-nav__svg nav__svg_burger_close">
+					<use xlink:href="../image/sprite.svg#icon--krestik"></use>
+				</svg>
+			</div>
+		</div>
+		<div class="header__nav_svg-burger">
+			<svg class="header-nav__svg nav__svg_burger">
+				<use xlink:href="../image/sprite.svg#icon--hamburger"></use>
+			</svg>
+			<!-- конец меню которое появляется при ширине экрана как телефон-->
+			
+		</div>
 		<header class="header">
 			<div class="header-title">
 				<div class="header-title__wrapper">
@@ -108,6 +127,11 @@
 							<svg class="header-nav__svg nav__svg_instagram">
 								<use xlink:href="../image/sprite.svg#icon--instagram"></use>
 							</svg></a></div>
+				</div>
+				<div class="header__nav_svg-burger">
+					<svg class="header-nav__svg nav__svg_burger">
+						<use xlink:href="../image/sprite.svg#icon--krestik"></use>
+					</svg>
 				</div>
 			</div>
 		</header>

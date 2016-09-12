@@ -34,7 +34,7 @@ html(lang="en")
                 a(href="drinks.html").header__menu-telephone-item
                     | НАПИТКИ
             .menu-tel__items
-                a(href="action.html").header__menu-telephone-item.header__nav-items_active
+                a(href="action.html").header__menu-telephone-item
                     | АКЦИИ
                 a(href="vacancies.html").header__menu-telephone-item
                     | ВАКАНСИИ
@@ -46,22 +46,22 @@ html(lang="en")
                     use(xlink:href="../image/sprite.svg#icon--krestik" )
         .header__nav_svg-burger
             svg.header-nav__svg.nav__svg_burger
-                use(xlink:href="../image/sprite.svg#icon--hamburger")
+                use(xlink:href="../image/sprite.svg#icon--plus")
             // конец меню которое появляется при ширине экрана как телефон
-
 
         header.header
             .header-title
                 .header-title__wrapper
                     .title__logo
                         img(src="../image/logo1.png" alt="логотип").logo__image
+
                     .title__content
                         .title__nav
                             .title__nav-item
-                                a(href="action.html").title__nav-link.title__nav-link_active
+                                a(href="action.html").title__nav-link
                                     | АКЦИИ
                             .title__nav-item
-                                a(href="vacancies.html").title__nav-link
+                                a(href="#").title__nav-link.title__nav-link_active
                                     | ВАКАНСИИ
                             .title__nav-item
                                 a(href="").title__nav-link
@@ -146,7 +146,7 @@ html(lang="en")
                         | ДЕСЕРТЫ
                     a(href="drinks.html").header__nav-items
                         | НАПИТКИ
-                    a.header__nav-icon
+                    .header__nav-icon
                         a(href="vk.com")
                             svg.header-nav__svg.nav__svg_vk
                                 use(xlink:href="../image/sprite.svg#icon--kontact")
@@ -155,9 +155,9 @@ html(lang="en")
                                 use(xlink:href="../image/sprite.svg#icon--instagram" )
                 .header__nav_svg-burger
                     svg.header-nav__svg.nav__svg_burger
-                        use(xlink:href="../image/sprite.svg#icon--krestik" )
+                use(xlink:href="../image/sprite.svg#icon--krestik" )
         .head-relativ
-            // вставляем слайдер
+         // вставляем слайдер
         .slider-contant
             img(src="../image/slider_vacancia.jpg" alt="slider-photo").slider-layer.slider-layer1
 
@@ -168,17 +168,14 @@ html(lang="en")
 
         .wraper-main
             .main-content
-                .content-action__item_once
-                    .content-action__image
-                        img(src="../image/slider/slider_3_768.jpg", alt="action1")
-                    .content-action__text.
-                        Насладись вкусом кофе
-                    .content-action__descripion.
-                        Эй, брат, если ты это читаешь значит
-                        ты как минимум умеешь читать и закончил пару классов (хотя бы)
-                        предлагаю это отметить стаканчиком крепкого кофе!!!!
-                    a(href="action.html").content-action__back-link
-                        | < назад
+                include ./add/ContentVakancies
 
-    footer.footer
-            include ./add/footer
+
+
+        footer.footer
+             include ./add/footer
+
+
+
+
+

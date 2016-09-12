@@ -15,13 +15,14 @@
   }
   @include breakpoint(tablet)  {
     width: 45%;
-    max-width: 310px;
+    max-width: 350px;
     margin:35px 20px 0 20px;
   }
   @include breakpoint(phone)  {
-    width: 90%;
-    max-width: 300px;
-    margin:10px;
+    width: 100%;
+    max-width: 375px;
+    margin-top:15px;
+    padding:10px 0 ;
   }
 
   &:hover{
@@ -39,7 +40,7 @@
     max-width: 310px;
   }
   @include breakpoint(phone)  {
-    max-width: 300px;
+    max-width: 375px;
   }
   img{
     width: 100%;
@@ -54,6 +55,11 @@
   font-family: MyriadProBold;
   font-weight: bold;
   word-spacing: 6px;
+  @include breakpoint(phone)  {
+    max-width: 335px;
+    margin: 0 20px;
+
+  }
 }
 .block__item-description{
   margin-top: 2px;
@@ -67,13 +73,19 @@
     max-width: 310px;
   }
   @include breakpoint(phone)  {
-    max-width: 300px;
+    max-width: 335px;
+    margin: 0 20px;
+
   }
 }
 .block__item-size{
   margin-top: auto;
   padding-top:10px;
   align-self: flex-start;
+
+  @include breakpoint(phone)  {
+    margin: 0 20px;
+  }
   .item-size_label{
     margin-left:3px;
     margin-right:20px;
@@ -86,7 +98,12 @@
   justify-content: flex-start;
   align-self: flex-start;
   margin-top: 15px;
-  width: 100%;
+  width: 90%;
+
+  @include breakpoint(phone)  {
+    margin: 0 20px;
+    max-width: 335px;
+  }
 
   .block__item-basket {
     margin-left:auto;
@@ -146,14 +163,17 @@
 
     @include breakpoint(desctop)  {
       width: 20px;
+      height: 20px;
       margin-right: 10px;
     }
     @include breakpoint(tablet)  {
       width: 18px;
+      height: 18px;
       margin-right: 10px;
     }
     @include breakpoint(phone)  {
       width: 18px;
+      height: 18px;
       margin-right: 10px;
     }
   }
