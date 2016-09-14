@@ -45,8 +45,9 @@ html(lang="en")
                     | КОНТАКТЫ
 
             .header__nav_svg-burger_close
-                svg.header-nav__svg.nav__svg_burger_close
-                    use(xlink:href="image/sprite.svg#icon--krestik" )
+                .heaader-for_mobile-circle
+                    svg.header-nav__svg.nav__svg_burger_close
+                        use(xlink:href="image/sprite.svg#icon--krestik" )
         .header__nav_svg-burger
             svg.header-nav__svg.nav__svg_burger
                 use(xlink:href="image/sprite.svg#icon--hamburger")
@@ -100,13 +101,14 @@ html(lang="en")
                 include ./add/pizza/pizza-italiano
 
         footer.footer
-             include ./add/footer
+             include ./add/footerIndex
 
         .menu-footer-for_mobile
             .footer-for_mobile_content
                 a(href="page/action.html")
-                    svg.footer-for_mobile_svg.footer-for_mobile_tel_znak
-                        use(xlink:href="image/sprite.svg#icon--tel_znachok")
+                    .footer-for_mobile-circle
+                        svg.footer-for_mobile_svg.footer-for_mobile_procent
+                            use(xlink:href="image/sprite.svg#icon--procent")
             .footer-for_mobile_content
                 a(href="tel:365365")
                     svg.footer-for_mobile_svg.footer-for_mobile_tel_znak

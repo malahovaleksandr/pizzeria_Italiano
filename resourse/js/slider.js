@@ -109,7 +109,7 @@ function slide (){
      var   container=$('.slider-contant'),//находим контейнер в котором все слайды
            item=container.find('.slider_layer'),//находим все li со слайдами
            activSlide=container.find('.slider-layer_activ');//находим слайд с активным классом
-
+    
     activSlide.removeClass('slider-layer_activ');//удаляем актив класс у Li которая была видна
     item.eq(i).addClass('slider-layer_activ');//добавляем активный класс
 }

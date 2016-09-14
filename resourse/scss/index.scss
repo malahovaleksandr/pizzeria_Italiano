@@ -21,6 +21,8 @@
     }
   }
 }
+
+// меню которое появляеться внизу на телефонах фиксид
 .menu-footer-for_mobile{
   display: none;
   @include breakpoint(phone)  {
@@ -35,16 +37,25 @@
 }
 .footer-for_mobile_content{
   width: 32%;
-  background: rgba(#111b20, .5);
+  background: rgba(#111b20, .7);
   display: flex;
   justify-content: center;
   align-items: center;
   border-radius: 5px;
   overflow: hidden;
 }
+.footer-for_mobile-circle{
+  width: 30px;
+  height: 30px;
+  border-radius: 15px;
+  background: #dc2136;
+}
 .footer-for_mobile_svg{
   height: 30px;
   width: 30px;
+}
+.footer-for_mobile_procent{
+  fill:#ffffff;
 }
 .footer-for_mobile_tel_znak{
   fill:#58b30a;

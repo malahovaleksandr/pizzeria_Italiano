@@ -488,22 +488,45 @@ z-index: 6;
 
   }
 }
+//
+//.header__nav_svg-burger_close{
+//  .nav__svg_burger_close{
+//    position: absolute;
+//    right: 215px;//значение равно ширине контейнера меню минус половинаширины свг
+//    top: 25px;
+//    cursor: pointer;
+//    display: none;
+//    height: 30px;
+//    width:30px;
+//    @include breakpoint(phone)  {
+//      display: inline-block;
+//    }
+//  }
+//}
+.heaader-for_mobile-circle{
+  position: absolute;
+  right: 215px;//значение равно ширине контейнера меню минус половинаширины свг
+  top: 25px;
+  cursor: pointer;
+  display: none;
+  width: 30px;
+  height: 30px;
+  border-radius: 15px;
+  background: #dc2136;
+  border: 1px solid #ffffff;
 
-.header__nav_svg-burger_close{
+  @include breakpoint(phone)  {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
   .nav__svg_burger_close{
-    position: absolute;
-    right: 215px;//значение равно ширине контейнера меню минус половинаширины свг
-    top: 25px;
-    cursor: pointer;
-    display: none;
-    height: 30px;
-    width:30px;
-    @include breakpoint(phone)  {
-      display: inline-block;
-    }
+    height: 28px;
+    width:28px;
+    margin:0;
+    fill:#ffffff;
   }
 }
-
 
 //пробное меню для телефона
 .menu-tel{
